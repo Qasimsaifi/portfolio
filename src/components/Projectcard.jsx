@@ -34,8 +34,8 @@ const Projectcard = () => {
   if (isLoading) {
     return (
       <div className="container mt-36 md:mx-auto px-4 flex h-screen">
-        <div className="grid rounded gap-1 sm:grid-cols-2 lg:grid-cols-3">
-          {[...Array(12)].map((_, index) => (
+        <div className="grid rounded gap-1 sm:grid-cols-2 lg:grid-cols-3 ">
+          {[...Array(6)].map((_, index) => (
             <span key={index} className="loader rounded text-4xl  font-bold text-blue-500 text-center mt-10 "></span>
           ))}
         </div>

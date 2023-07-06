@@ -8,7 +8,7 @@ const Homepage = () => {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex flex-home items-center justify-center min-h-screen bg-gray-100 ">
     <div className="text-center">
       <h1 className="text-4xl sm:text-7xl md:text-9xl font-bold text-purple-500">Hi, I'm Qasim</h1>
       <h2 className="text-2xl sm:text-4xl md:text-6xl mt-2 text-gray-600">
