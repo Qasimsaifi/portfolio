@@ -80,26 +80,24 @@ function NavBar() {
                     Github
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-black dark:text-white py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent">
-                  <span className="mt-14">
-                    {theme === "dark" ? (
-                      <Link
-                        href=""
-                        className="cursor-pointer"
-                        onClick={() => setTheme("light")}
-                      >
-                        <HiSun size={26} />
-                      </Link>
-                    ) : (
-                      <Link
-                        href=""
-                        className="cursor-pointer"
-                        onClick={() => setTheme("dark")}
-                      >
-                        <IoMdMoon size={26} />
-                      </Link>
-                    )}
-                  </span>
+                <li className="pb-6 text-xl text-black dark:text-white py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent flex items-center justify-center">
+                  {theme === "dark" ? (
+                    <Link
+                      href=""
+                      className="cursor-pointer text-center"
+                      onClick={() => setTheme("light")}
+                    >
+                      <HiSun size={26} />
+                    </Link>
+                  ) : (
+                    <Link
+                      href=""
+                      className="cursor-pointer"
+                      onClick={() => setTheme("dark")}
+                    >
+                      <IoMdMoon size={26} />
+                    </Link>
+                  )}
                 </li>
               </ul>
             </div>
