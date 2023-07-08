@@ -21,10 +21,7 @@ const Homepage = () => {
           I'm a Web <Typewriter texts={["Developer", "Designer", "Engineer"]} speed={220} />|
         </h2>
 
-        <div className="flex flex-row justify-around mt-14">
-          <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">Contact</button>
-          <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">About</button>
-        </div>
+        
       </div>
     </div>
   );
