@@ -33,10 +33,10 @@ const Projectcard = () => {
 
   if (isLoading) {
     return (
-      <div className="container mt-36 md:mx-auto px-4 flex h-screen">
-        <div className="grid rounded gap-1 sm:grid-cols-2 lg:grid-cols-3 ">
+      <div className="container mt-36 md:mx-auto px-4 flex h-screen ">
+        <div className="grid rounded gap-1 sm:grid-cols-2 lg:grid-cols-3 dark:bg-black">
           {[...Array(6)].map((_, index) => (
-            <span key={index} className="loader rounded text-4xl  font-bold text-blue-500 text-center mt-10 "></span>
+            <span key={index} className="loader rounded text-4xl  font-bold text-blue-500 text-center mt-10 dark:bg-black"></span>
           ))}
         </div>
       </div>
@@ -45,13 +45,13 @@ const Projectcard = () => {
   
   else {
     return (
-      <div className="bg-white container md:mx-auto px-4 h-full">
+      <div className="dark:bg-dark container md:mx-auto px-4 h-full">
         <h1 className="text-4xl font-bold text-blue-500 text-center mt-20 mb-8">Projects</h1>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <div
-              className="relative bg-white rounded-lg shadow-lg overflow-hidden"
+              className="relative rounded-lg shadow-lg overflow-hidden"
               key={project.id}
               onMouseEnter={() => handleCardHover(project.id)}
               onMouseLeave={handleCardLeave}

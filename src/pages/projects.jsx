@@ -9,7 +9,6 @@ const projects = () => {
     <div>
       <NavBar />
       <Projectcard />
-      <Footer/>
     </div>
   )
 }

@@ -1,12 +1,17 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { useState } from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import { useTheme } from "next-themes";
+import { HiSun } from "react-icons/hi";
+import { IoMdMoon } from "react-icons/io";
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
+  const { theme, setTheme } = useTheme();
+
   return (
     <div>
-      <nav className="w-full fixed  top-0 left-0 right-0 z-10 border-b border-gray-500">
+      <nav className="w-full fixed  top-0 left-0 right-0 z-10 border-b border-gray-500 bg-white dark:bg-black">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5  md:block">
@@ -38,39 +43,63 @@ function NavBar() {
           <div>
             <div
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? 'p-12 md:p-0 block' : 'hidden'
+                navbar ? "p-12 md:p-0 block" : "hidden"
               }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex mt-3 ">
-                <li className="pb-6 text-xl text-black py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-black  dark:text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link href="/" onClick={() => setNavbar(!navbar)}>
                     Home
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-black py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-black dark:text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link href="/about" onClick={() => setNavbar(!navbar)}>
                     About
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-black dark:text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link href="/blog" onClick={() => setNavbar(!navbar)}>
                     Blogs
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-black dark:text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link href="/contact" onClick={() => setNavbar(!navbar)}>
                     Contact
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-black dark:text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <Link href="/projects" onClick={() => setNavbar(!navbar)}>
                     Projects
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                  <Link href="https://github.com/qasimsaifi" onClick={() => setNavbar(!navbar)}>
+                <li className="pb-6 text-xl text-black dark:text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link
+                    href="https://github.com/qasimsaifi"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     Github
                   </Link>
+                </li>
+                <li className="pb-6 text-xl text-black dark:text-white py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent">
+                  <span className="mt-14">
+                    {theme === "dark" ? (
+                      <Link
+                        href=""
+                        className="cursor-pointer"
+                        onClick={() => setTheme("light")}
+                      >
+                        <HiSun size={26} />
+                      </Link>
+                    ) : (
+                      <Link
+                        href=""
+                        className="cursor-pointer"
+                        onClick={() => setTheme("dark")}
+                      >
+                        <IoMdMoon size={26} />
+                      </Link>
+                    )}
+                  </span>
                 </li>
               </ul>
             </div>

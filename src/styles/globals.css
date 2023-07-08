@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --foreground: white;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,11 +34,11 @@
   width: 600px;
   height: 400px;
   background:
-      linear-gradient(0.25turn, transparent, #FFF, transparent),
+      linear-gradient(0.25turn, transparent, var(--background), transparent),
       linear-gradient(#DDD, #DDD),
-      radial-gradient(38px circle at 19px 19px, #DDD 50%, transparent 51%),
-      linear-gradient(#DDD, #DDD);
-  background-color: #fff;
+      radial-gradient(38px circle at 19px 19px,var(--background) 50%, transparent 51%),
+      linear-gradient(var(--background), var(--background));
+  background-color: var(--background);
   background-repeat: no-repeat;
   background-size: 450px 300px, 450px 230px, 150px 150px, 400px 0px;
   background-position: -315px 0, 0 0, 15px 140px, 65px 145px;
