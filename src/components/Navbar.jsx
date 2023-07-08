@@ -4,10 +4,18 @@ import { useState } from "react";
 import { useTheme } from "next-themes";
 import { HiSun } from "react-icons/hi";
 import { IoMdMoon } from "react-icons/io";
+import { BsGithub } from "react-icons/bs";
+import { useEffect } from "react";
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);;
+  
 
   return (
     <div>
@@ -72,12 +80,14 @@ function NavBar() {
                     Projects
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-black dark:text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-black dark:text-white py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent flex items-center justify-center">
                   <Link
                     href="https://github.com/qasimsaifi"
                     onClick={() => setNavbar(!navbar)}
+                    target="_blank"
+                    className="cursor-pointer text-center"
                   >
-                    Github
+                    <BsGithub size={26} />
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-black dark:text-white py-2 px-6 text-center border-b-2 md:border-b-0 hover:bg-purple-600 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent flex items-center justify-center">

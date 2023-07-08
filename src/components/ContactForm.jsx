@@ -53,8 +53,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
-      <div className="bg-white dark:bg-black p-8 rounded-lg shadow-lg w-full sm:max-w-md">
+    <div className="flex justify-center items-center min-h-screen ">
+      <div className="bg-gray-100 dark:bg-black p-8 rounded-lg shadow-lg w-full sm:max-w-md">
         <h1 className="text-2xl font-bold mb-6">Send us a message</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-4">
