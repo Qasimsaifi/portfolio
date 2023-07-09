@@ -1,15 +1,18 @@
-import BlogsPage from '@/components/BlogsPage'
-import NavBar from '@/components/Navbar'
-import React from 'react'
+import BlogsPage from "@/components/BlogsPage";
+import NavBar from "@/components/Navbar";
+import React from "react";
+import Head from "next/head";
 
 const blog = () => {
   return (
     <>
-      <NavBar/>
-      <BlogsPage/>
-      
+      <Head>
+        <title>Blogs</title>
+      </Head>
+      <NavBar />
+      <BlogsPage />
     </>
-  )
-}
+  );
+};
 
-export default blog
+export default blog;

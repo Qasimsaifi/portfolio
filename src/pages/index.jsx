@@ -5,15 +5,19 @@ import Homepage from "@/components/Homepage";
 import Footer from "@/components/Footer";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-
   return (
     <>
-        <NavBar />
-        <Homepage />
+      <Head>
+        <title>Home</title>
+      </Head>
+
+      <NavBar />
+      <Homepage />
     </>
   );
 }

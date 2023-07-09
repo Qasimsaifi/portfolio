@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "@/components/Navbar";
+import Head from "next/head";
 import {
   FaUser,
   FaLightbulb,
@@ -10,10 +11,14 @@ import { GiSkills } from "react-icons/gi";
 import { MdWeb } from "react-icons/md";
 import Image from "next/image";
 import FeatureSkills from "@/components/FeatureSkills";
+import Link from "next/link";
 
 const About = () => {
   return (
     <>
+    <Head>
+        <title>About Me</title>
+      </Head>
       <NavBar />
       <section className="bg-white dark:bg-black mt-16">
         <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -25,9 +30,10 @@ const About = () => {
               <div className="relative w-48 h-48 overflow-hidden inset-0 bg-gradient-to-tr from-blue-500 to-purple-500 opacity-75 rounded-full">
                 <Image
                   src="/profile-image.png"
-                  alt="Profile Image"
+                  alt="Your Photo"
                   layout="fill"
                   objectFit="cover"
+                  className="rounded-full"
                 />
               </div>
             </div>
@@ -63,7 +69,21 @@ const About = () => {
               understand clients' unique requirements and translate them into
               visually appealing and user-friendly digital experiences.
             </p>
-        <FeatureSkills/>
+            <h2 className="text-3xl md:text-4xl font-bold text-purple-500 mb-6 mt-12">
+              My Resume
+            </h2>
+            <div className="flex items-center mb-8">
+              <Link
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-500  font-semibold border border-purple-500 hover:bg-purple-500 hover:text-white rounded-md py-3 px-6 transition duration-300 ease-in-out"
+              >
+                Download My Resume
+              </Link>
+            </div>
+
+            <FeatureSkills />
 
             <h2 className="text-2xl md:text-3xl font-bold text-purple-500 mb-6 mt-6">
               My Mission
@@ -94,8 +114,8 @@ const About = () => {
             <ul className="text-gray-600 dark:text-white text-lg mb-8 text-left list-disc list-inside ml-8">
               <li>Strong proficiency in HTML, CSS, and JavaScript</li>
               <li>
-                Experience with modern web development frameworks such as
-                React.js, Next.js, and Svelte
+                Experience with modern web development frameworks React.js,
+                Next.js, and Svelte
               </li>
               <li>
                 Knowledge of server-side technologies like Node.js and Django

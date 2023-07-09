@@ -19,9 +19,7 @@ const Homepage = () => {
             I'm a <Typewriter texts={['Developer', 'Designer', 'Engineer']} speed={220} />
           </h2>
           
-          <div className="mt-4">
-            <button className="bg-purple-500 text-white py-2 px-4 rounded-full shadow-lg font-medium hover:bg-purple-600 transition-colors duration-300">Contact Me</button>
-          </div>
+         
         </div>
         <div className="mt-4 sm:mt-0">
           <div className="relative w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60">
