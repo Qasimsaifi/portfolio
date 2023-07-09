@@ -34,7 +34,7 @@ const About = () => {
               Over the years, I have had the privilege of working on diverse projects, ranging from personal blogs to e-commerce platforms. Each project has provided me with invaluable experience and reinforced my belief in the transformative power of well-designed and functional websites. I take great pride in my ability to understand clients' unique requirements and translate them into visually appealing and user-friendly digital experiences.
             </p>
             <h2 className="text-2xl md:text-3xl font-bold dark:text-white text-gray-800 mb-6">
-              Our Mission
+              My Mission
             </h2>
             <p className="text-gray-600 dark:text-white text-lg mb-8">
               At our company, we are driven by a mission to empower individuals, entrepreneurs, and businesses to establish a remarkable online presence. We believe that every idea, no matter how big or small, deserves a platform to thrive. Our goal is to provide comprehensive web development services that are accessible, affordable, and tailored to our clients' unique needs.
