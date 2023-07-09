@@ -11,7 +11,7 @@ const Projectcard = () => {
       try {
         setIsLoading(true);
         const response = await fetch(
-          'https://devdox.up.railway.app/api/v1/portfolio/projects/?ordering=created_at'
+          'https://devdox.up.railway.app/api/v1/portfolio/projects/?ordering=created_at/'
         );
         const data = await response.json();
         setProjects(data || []);
