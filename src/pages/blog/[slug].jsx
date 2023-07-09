@@ -61,7 +61,6 @@ export async function getServerSideProps(context) {
 
     const data = await response.json();
     const blogPost = data[0] || null;
-    console.log(blogPost);
 
     if (!blogPost) {
       return {

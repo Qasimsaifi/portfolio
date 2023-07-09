@@ -23,7 +23,6 @@ const BlogsPage = () => {
 
         const data = await response.json();
         setBlogs(data || []);
-        console.log(data);
         setIsLoading(false);
       } catch (error) {
         console.error("Error fetching blogs:", error);
