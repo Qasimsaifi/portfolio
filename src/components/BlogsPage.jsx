@@ -47,7 +47,7 @@ const BlogsPage = () => {
     );
   } else {
     return (
-      <div className="dark:bg-dark container md:mx-auto px-4 h-full">
+      <div className="dark:bg-dark container md:mx-auto px-4 h-screen">
         <h1 className="text-4xl font-bold text-blue-500 text-center mt-20 mb-8">
           Blogs
         </h1>

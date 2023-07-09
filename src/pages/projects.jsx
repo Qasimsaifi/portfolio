@@ -13,6 +13,7 @@ const projects = () => {
       </Head>
       <NavBar />
       <Projectcard />
+      <Footer/>
     </div>
   )
 }

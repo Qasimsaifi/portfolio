@@ -40,7 +40,7 @@ const Projectcard = () => {
     );
   } else {
     return (
-      <div className="dark:bg-dark container md:mx-auto px-4 h-full">
+      <div className="dark:bg-dark container md:mx-auto px-4 h-screen">
         <h1 className="text-4xl font-bold text-blue-500 text-center mt-20 mb-8">Projects</h1>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

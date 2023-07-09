@@ -12,6 +12,7 @@ import { MdWeb } from "react-icons/md";
 import Image from "next/image";
 import FeatureSkills from "@/components/FeatureSkills";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 const About = () => {
   return (
@@ -174,6 +175,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

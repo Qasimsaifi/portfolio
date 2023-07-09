@@ -3,6 +3,7 @@ import NavBar from "@/components/Navbar";
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Head from "next/head";
+import Footer from "@/components/Footer";
 
 const SingleBlogPage = ({ blogPost }) => {
   const router = useRouter();
@@ -26,7 +27,7 @@ const SingleBlogPage = ({ blogPost }) => {
       </Head>
       <NavBar />
 
-      <div className="container lg:w-8/12 mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="container lg:w-8/12 mx-auto px-4 sm:px-6 lg:px-8 py-8 h-screen">
         <h1 className="text-2xl sm:text-5xl lg:text-4xl font-bold mb-8 mt-16 text-black dark:text-white">
           {blogPost.title}
         </h1>
@@ -42,6 +43,7 @@ const SingleBlogPage = ({ blogPost }) => {
           />
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

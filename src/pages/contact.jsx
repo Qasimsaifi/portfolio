@@ -2,6 +2,7 @@ import ContactForm from '@/components/ContactForm'
 import NavBar from '@/components/Navbar'
 import React from 'react'
 import Head from 'next/head'
+import Footer from '@/components/Footer'
 
 const contact = () => {
   return (
@@ -11,6 +12,7 @@ const contact = () => {
       </Head>
     <NavBar/>
     <ContactForm/>
+    <Footer/>
     </>
   )
 }
