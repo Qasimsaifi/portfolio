@@ -22,8 +22,8 @@ const SingleBlogPage = ({ blogPost }) => {
     <>
       <NavBar />
 
-      <div className="container mx-auto w-8/12 py-8">
-        <h1 className="text-4xl font-bold mb-8 mt-16 text-black dark:text-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 mt-16 text-black dark:text-white">
           {blogPost.title}
         </h1>
         <img
