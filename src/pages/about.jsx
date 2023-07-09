@@ -9,6 +9,7 @@ import {
 import { GiSkills } from "react-icons/gi";
 import { MdWeb } from "react-icons/md";
 import Image from "next/image";
+import FeatureSkills from "@/components/FeatureSkills";
 
 const About = () => {
   return (
@@ -17,11 +18,11 @@ const About = () => {
       <section className="bg-white dark:bg-black mt-16">
         <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold dark:text-white text-gray-800 mb-6 text-center">
+            <h1 className="text-3xl md:text-4xl font-bold text-purple-500 mb-6 text-center">
               My Story
             </h1>
             <div className="flex items-center justify-center mb-8">
-              <div className="relative w-48 h-48 rounded-full overflow-hidden">
+              <div className="relative w-48 h-48 overflow-hidden inset-0 bg-gradient-to-tr from-blue-500 to-purple-500 opacity-75 rounded-full">
                 <Image
                   src="/profile-image.png"
                   alt="Profile Image"
@@ -62,7 +63,9 @@ const About = () => {
               understand clients' unique requirements and translate them into
               visually appealing and user-friendly digital experiences.
             </p>
-            <h2 className="text-2xl md:text-3xl font-bold dark:text-white text-gray-800 mb-6">
+        <FeatureSkills/>
+
+            <h2 className="text-2xl md:text-3xl font-bold text-purple-500 mb-6 mt-6">
               My Mission
             </h2>
             <p className="text-gray-600 dark:text-white text-lg mb-8">

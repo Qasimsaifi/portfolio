@@ -1,0 +1,52 @@
+import React from 'react';
+
+const FeatureSkills = () => {
+  return (
+    <>
+<div className="mt-8">
+  <h3 className="text-3xl font-semibold text-purple-500 mb-6 mt-6">Featured Skills</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+      <h4 className="text-xl font-semibold mb-2">Web Development</h4>
+      <ul className="list-disc pl-6 text-gray-800 dark:text-white">
+        <li>React</li>
+        <li>NextJS</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Node.js</li>
+        <li>Django</li>
+        <li>Django REST Framework</li>
+        <li>Python</li>
+      </ul>
+    </div>
+    <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+      <h4 className="text-xl font-semibold mb-2">Frontend Development</h4>
+      <ul className="list-disc pl-6 text-gray-800 dark:text-white">
+        <li>React</li>
+        <li>NextJS</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Tailwind CSS</li>
+        <li>Responsive Design</li>
+
+      </ul>
+    </div>
+    <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
+      <h4 className="text-xl font-semibold mb-2">Backend Development</h4>
+      <ul className="list-disc pl-6 text-gray-800 dark:text-white">
+        <li>NodeJS</li>
+        <li>Django</li>
+        <li>Django REST Framework</li>
+        <li>Python</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    </>
+  );
+};
+
+export default FeatureSkills;
