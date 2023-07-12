@@ -6,6 +6,7 @@ import Head from "next/head";
 import Footer from "@/components/Footer";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Link from "next/link";
 
 const SingleProductPage = ({ product }) => {
   const router = useRouter();
@@ -31,9 +32,9 @@ const SingleProductPage = ({ product }) => {
 
       <main className="flex justify-center items-center lg:h-screen">
         <div className="container mx-auto px-4 py-8">
-          <div className="bg-white mt-16 drop-shadow-lg dark:bg-black pt-8 md:pt-16 grid grid-cols-1 md:grid-cols-2 gap-8 p-1 rounded-lg">
+          <div className="bg-white mt-16 drop-shadow-lg dark:bg-black pt-4 pb-4  grid grid-cols-1 md:grid-cols-2 gap-8 p-1 rounded-lg">
             <div className="flex justify-center md:justify-start h-full w-full">
-              <div className="w-full max-w-[600px] mx-auto md:w-full h-full p-4">
+              <div className="w-full max-w-[600px] mx-auto md:w-full  p-4">
                 <Carousel
                   showThumbs={false}
                   showIndicators={product.image_urls.length > 1}
@@ -43,7 +44,7 @@ const SingleProductPage = ({ product }) => {
                       <img
                         src={imageUrl}
                         alt={`Image ${index + 1}`}
-                        className="h-full w-full object-fill-contain"
+                        className="h-96  object-contain rounded"
                       />
                     </div>
                   ))}
@@ -65,8 +66,8 @@ const SingleProductPage = ({ product }) => {
                   />
                 </div>
                 <div className="flex justify-center md:justify-start mt-6">
-                  <button className="bg-blue-600 px-5 py-3 text-white rounded-lg w-full md:w-auto text-center">
-                    Add to Cart
+                  <button className="bg-purple-600 px-5 py-3 dark:text-white text-black hover:bg-purple-500 rounded-lg w-full md:w-auto text-center">
+                    <Link href={product.file}>Buy Now</Link>
                   </button>
                 </div>
               </div>

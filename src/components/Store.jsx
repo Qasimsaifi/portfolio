@@ -33,15 +33,15 @@ const Store = () => {
     );
   } else {
     return (
-      <div className="dark:bg-dark container md:mx-auto px-4 h-screen">
+      <div className="dark:bg-dark h-screen container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-blue-500 text-center mt-20 mb-8">
           Products
         </h1>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {products.map((product) => (
             <div
-              className="w-72 bg-white dark:bg-gray-800 drop-shadow-md rounded-lg"
+              className="w-full bg-white dark:bg-gray-800 drop-shadow-md rounded-lg"
               key={product.id}
             >
               <img
