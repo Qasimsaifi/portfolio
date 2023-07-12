@@ -31,8 +31,8 @@ const SingleProductPage = ({ product }) => {
 
       <main className="flex justify-center items-center lg:h-screen ">
     <div className="container mx-auto px-4 py-8 ">
-      <div className="bg-white mt-72px dark:bg-black pt-8 md:pt-16 grid grid-cols-1 md:grid-cols-2 gap-8 p-1 rounded-lg">
-        <div className="flex justify-center md:justify-start">
+      <div className="bg-white mt-16 dark:bg-black pt-8 md:pt-16 grid grid-cols-1 md:grid-cols-2 gap-8 p-1 rounded-lg">
+        <div className="flex justify-center md:justify-start w-full">
           <Carousel
             showThumbs={false}
             showIndicators={product.image_urls.length > 1}
