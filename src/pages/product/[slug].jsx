@@ -57,7 +57,7 @@ const SingleProductPage = ({ product }) => {
                   {product.name}
                 </h1>
                 <h2 className="text-xl md:text-2xl font-bold">
-                  ${product.price}
+                ₹{product.price}
                 </h2>
                 <div className="prose">
                   <div
@@ -67,7 +67,9 @@ const SingleProductPage = ({ product }) => {
                 </div>
                 <div className="flex justify-center md:justify-start mt-6">
                   <button className="bg-purple-600 px-5 py-3 dark:text-white text-black hover:bg-purple-500 rounded-lg w-full md:w-auto text-center">
-                    <Link href={product.file}>Buy Now</Link>
+                    <Link target="blank" href={product.file}>
+                      Buy Now
+                    </Link>
                   </button>
                 </div>
               </div>

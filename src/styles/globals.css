@@ -45,6 +45,7 @@
   border-radius: 50%;
   border: 5px solid rgb(168 85 247);
   animation: prixClipFix 2s linear infinite ;
+  
 }
 .loader::after{
   border-color: rgb(168 85 247);
