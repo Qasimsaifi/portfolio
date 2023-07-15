@@ -117,13 +117,12 @@ function NavBar() {
                         <HiSun size={26} />
                       </Link>
                     ) : (
-                      <Link
-                        href=""
+                      <p
                         className="cursor-pointer"
                         onClick={() => setTheme("dark")}
                       >
                         <IoMdMoon size={26} />
-                      </Link>
+                      </p>
                     )}
                   </li>
                 </ul>
