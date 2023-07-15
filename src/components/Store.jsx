@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Store = () => {
   const [products, setProducts] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -23,7 +23,16 @@ const Store = () => {
     fetchProducts();
   }, []);
 
-  return (
+  if(isLoading){
+    return(
+      <div className="flex items-center justify-center h-screen">
+        <span className="loader"></span>
+      </div>
+    )
+  }else{
+
+    
+    return (
     <div className="dark:bg-dark h-screen container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold text-blue-500 text-center mt-20 mb-8">
         Products
@@ -66,7 +75,7 @@ const Store = () => {
                 <Link
                   href={{ pathname: '/product/[slug]', query: { slug: product.slug } }}
                   className="px-4 py-2 bg-purple-600 hover:bg-purple-500 text-center text-sm text-white dark:text-black rounded duration-300"
-                >
+                  >
                   Buy now
                 </Link>
               </div>
@@ -76,6 +85,7 @@ const Store = () => {
       </div>
     </div>
   );
+}
 };
 
 export default Store;

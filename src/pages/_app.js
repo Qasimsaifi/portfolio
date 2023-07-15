@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           property="og:image"
-          content="URL to the image representing your portfolio or services"
+          content="https://kasimsaifi.tech/services"
         />
         <meta property="og:url" content="https://kasimsaifi.tech" />
         <meta property="og:type" content="website" />
