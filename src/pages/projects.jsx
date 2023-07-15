@@ -9,7 +9,7 @@ const projects = () => {
   return (
     <div>
       <Head>
-        <title>Projects</title>
+        <title>Discover Our Impressive Portfolio of Projects</title>
       </Head>
       <NavBar />
       <Projectcard />
