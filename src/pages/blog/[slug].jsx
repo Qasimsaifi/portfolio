@@ -1,13 +1,50 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import NavBar from "@/components/Navbar";
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Head from "next/head";
 import Footer from "@/components/Footer";
-import BlogsPage from "@/components/BlogsPage";
+import "prism-themes/themes/prism-material-oceanic.css";
+import Prism from "prismjs";
+import Clipboard from "clipboard";
 
 const SingleBlogPage = ({ blogPost }) => {
   const router = useRouter();
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      const preElements = contentRef.current.querySelectorAll("pre[class^='language-']");
+      preElements.forEach((preElement) => {
+        const language = preElement.className.replace("language-", "");
+        Prism.highlightElement(preElement, false, () => {});
+
+        // Check if the copy button already exists
+        const existingCopyButton = preElement.previousElementSibling;
+        if (!existingCopyButton || !existingCopyButton.classList.contains("copy-button")) {
+          // Create copy button
+          const copyButton = document.createElement("button");
+          copyButton.className = "copy-button bg-purple-600";
+          copyButton.textContent = "Copy";
+          preElement.parentNode.insertBefore(copyButton, preElement);
+
+          // Initialize Clipboard.js for the copy button
+          const clipboard = new Clipboard(copyButton, {
+            target: () => preElement,
+          });
+
+          // Handle success message on copy
+          clipboard.on("success", (e) => {
+            copyButton.textContent = "Copied!";
+            setTimeout(() => {
+              copyButton.textContent = "Copy";
+            }, 1000);
+            e.clearSelection();
+          });
+        }
+      });
+    }
+  }, [blogPost]);
 
   if (router.isFallback) {
     return (
@@ -23,12 +60,12 @@ const SingleBlogPage = ({ blogPost }) => {
 
   return (
     <>
-    <Head>
+      <Head>
         <title>{blogPost.title}</title>
       </Head>
       <NavBar />
 
-      <div className="container lg:w-8/12 mx-auto px-4 sm:px-6 lg:px-8 py-8 ">
+      <div className="container lg:w-8/12 mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <h1 className="text-2xl sm:text-5xl lg:text-4xl font-bold mb-8 mt-16 text-black dark:text-white">
           {blogPost.title}
         </h1>
@@ -40,11 +77,12 @@ const SingleBlogPage = ({ blogPost }) => {
         <div className="prose">
           <div
             className="overflow-hidden rounded-lg"
+            ref={contentRef}
             dangerouslySetInnerHTML={{ __html: blogPost.content }}
           />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
