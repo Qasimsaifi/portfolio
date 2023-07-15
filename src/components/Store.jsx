@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 const Store = () => {
   const [products, setProducts] = useState([]);
@@ -44,10 +45,12 @@ const Store = () => {
               className="w-full bg-white dark:bg-gray-800 drop-shadow-md rounded-lg"
               key={product.id}
             >
-              <img
+              <Image
                 className="object-cover mx-auto rounded-tl-lg rounded-tr-lg w-full h-64"
                 src={product.image_urls[product.cover_image]}
                 alt={product.title}
+                width={700}
+                height={700}
               />
               <div className="px-5 py-3 space-y-2">
                 <h3 className="text-lg">{product.name}</h3>

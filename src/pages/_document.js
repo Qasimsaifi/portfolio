@@ -65,13 +65,7 @@ export default function Document() {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="format-detection" content="telephone=no" />
-        <title>KASIM SAIFI</title>
       </Head>
-      Ensure that you have the Head component imported from next/head or the
-      relevant library you are using in your project. Replace the placeholder
-      values, such as the description, image URLs, and URL of your portfolio
-      website, with the actual content relevant to your website. Feel free to
-      customize and add more meta tags as needed for your specific requirements.
       <body>
         <Main />
         <NextScript />
