@@ -8,7 +8,7 @@ const contact = () => {
   return (
     <>
     <Head>
-        <title>Contact Me</title>
+        <title>Contact Kasim Saifi - Web Development Services</title>
       </Head>
     <NavBar/>
     <ContactForm/>

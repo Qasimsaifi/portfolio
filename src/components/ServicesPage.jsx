@@ -7,33 +7,33 @@ const ServicesPage = () => {
         <h1 className="text-4xl font-semibold text-center mb-10">Our Services</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="hover:bg-purple-400 transition-colors  hover:text-white dark:hover:bg-purple-400 dark:hover:text-black bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow-md">
-            <h4 className="text-xl font-semibold mb-2">Web Design</h4>
+            <h1 className="text-xl font-semibold mb-2">Web Design</h1>
             <ul className="list-disc pl-6 ">
-              <li>Responsive Web Design</li>
-              <li>Custom UI/UX Design</li>
-              <li>Wireframing and Prototyping</li>
-              <li>Mobile-Friendly Development</li>
-              <li>Cross-Browser Compatibility</li>
+              <li><h1><h1>Responsive Web Design</h1></h1></li>
+              <li><h1>Custom UI/UX Design</h1></li>
+              <li><h1>Wireframing and Prototyping</h1></li>
+              <li><h1>Mobile-Friendly Development</h1></li>
+              <li><h1>Cross-Browser Compatibility</h1></li>
             </ul>
           </div>
           <div className="hover:bg-purple-400 transition-colors hover:text-white dark:hover:bg-purple-400 dark:hover:text-black bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow-md">
-            <h4 className="text-xl font-semibold mb-2">Web Development</h4>
+            <h1 className="text-xl font-semibold mb-2">Web Development</h1>
             <ul className="list-disc pl-6 ">
-              <li>Frontend Development</li>
-              <li>Backend Development</li>
-              <li>Database Design</li>
-              <li>API Integration</li>
-              <li>E-commerce Solutions</li>
+              <li><h1>Frontend Development</h1></li>
+              <li><h1>Backend Development</h1></li>
+              <li><h1>Database Design</h1></li>
+              <li><h1>API Integration</h1></li>
+              <li><h1>E-commerce Solutions</h1></li>
             </ul>
           </div>
           <div className="hover:bg-purple-400 transition-colors hover:text-white dark:hover:bg-purple-400 dark:hover:text-black bg-gray-100  cursor-pointer dark:bg-gray-800 p-4 rounded-lg shadow-md">
-            <h4 className="text-xl font-semibold mb-2">Mobile App Development</h4>
+            <h1 className="text-xl font-semibold mb-2">Mobile App Development</h1>
             <ul className="list-disc pl-6 ">
-              <li>iOS Development</li>
-              <li>Android Development</li>
-              <li>Cross-Platform Development</li>
-              <li>UI/UX Design for Mobile Apps</li>
-              <li>App Testing and Quality Assurance</li>
+              <li><h1>iOS Development</h1></li>
+              <li><h1>Android Development</h1></li>
+              <li><h1>Cross-Platform Development</h1></li>
+              <li><h1>UI/UX Design for Mobile Apps</h1></li>
+              <li><h1>App Testing and Quality Assurance</h1></li>
             </ul>
           </div>
         </div>

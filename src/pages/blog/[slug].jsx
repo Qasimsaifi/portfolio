@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Head from "next/head";
 import Footer from "@/components/Footer";
+import BlogsPage from "@/components/BlogsPage";
 
 const SingleBlogPage = ({ blogPost }) => {
   const router = useRouter();
@@ -23,7 +24,7 @@ const SingleBlogPage = ({ blogPost }) => {
   return (
     <>
     <Head>
-        <title>Blog</title>
+        <title>{blogPost.title}</title>
       </Head>
       <NavBar />
 

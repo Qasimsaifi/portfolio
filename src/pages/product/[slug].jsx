@@ -26,7 +26,7 @@ const SingleProductPage = ({ product }) => {
   return (
     <>
       <Head>
-        <title>Product</title>
+        <title>{product.name}</title>
       </Head>
       <NavBar />
 

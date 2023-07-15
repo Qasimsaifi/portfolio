@@ -8,7 +8,7 @@ const blog = () => {
   return (
     <>
       <Head>
-        <title>Blogs</title>
+        <title>Web Development Blog: Stay Updated with Kasim Saifi's Expert Insights and Trends</title>
       </Head>
       <NavBar />
       <BlogsPage />

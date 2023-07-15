@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
     <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         {/* Meta tags for Google search */}
         <meta
           name="description"

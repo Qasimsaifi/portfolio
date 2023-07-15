@@ -7,7 +7,7 @@ const store = () => {
   return (
     <>
     <Head>
-      <title>Store</title>
+      <title>Online Store - Kasim Saifi Web Products</title>
     </Head>
       <NavBar/>
       <Store/>

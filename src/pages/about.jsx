@@ -18,7 +18,7 @@ const About = () => {
   return (
     <>
     <Head>
-        <title>About Me</title>
+        <title>About Kasim Saifi - Web Developer and Entrepreneur</title>
       </Head>
       <NavBar />
       <section className="bg-white dark:bg-black mt-16">
