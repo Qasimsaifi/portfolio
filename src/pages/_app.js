@@ -8,7 +8,6 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta charSet="utf-8" />
-        {/* Meta tags for Google search */}
         <meta
           name="description"
           content="I'm Kasim Saifi, a web developer offering high-quality web development services and products. Contact me to build your website or explore my portfolio."
@@ -30,7 +29,10 @@ export default function App({ Component, pageProps }) {
           property="og:description"
           content="I'm Kasim Saifi, a web developer offering high-quality web development services and products. Contact me to build your website or explore my portfolio."
         />
-        <meta property="og:image" content="https://kasimsaifi.tech/profile-image.png" />
+        <meta
+          property="og:image"
+          content="https://kasimsaifi.tech/profile-image.png"
+        />
         <meta property="og:url" content="https://kasimsaifi.tech" />
         <meta property="og:type" content="website" />
 
@@ -43,7 +45,10 @@ export default function App({ Component, pageProps }) {
           name="twitter:description"
           content="I'm Kasim Saifi, a web developer offering high-quality web development services and products. Contact me to build your website or explore my portfolio."
         />
-        <meta name="twitter:image" content="https://kasimsaifi.tech/profile-image.png" />
+        <meta
+          name="twitter:image"
+          content="https://kasimsaifi.tech/profile-image.png"
+        />
         <meta name="twitter:card" content="summary_large_image" />
 
         {/* Additional meta tags */}
