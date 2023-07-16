@@ -11,8 +11,9 @@ const BlogsPage = () => {
   useEffect(() => {
     const fetchblogs = async () => {
       try {
+        let API_URL = process.env.NEXT_PUBLIC_API_URL || 'api_not detected '
         const response = await fetch(
-          "https://backend.kasimsaifi.tech/api/v1/portfolio/blog/?is_published=true&ordering=created_at/",
+          `${API_URL}/portfolio/blog/?is_published=true&ordering=created_at/`,
           {
             headers: {
               Authorization:
@@ -21,11 +22,10 @@ const BlogsPage = () => {
           }
         );
 
-        const data = await response.json();
-        setBlogs(data || []);
+        const data = await response.json(); // Check the fetched data in the console
+        setBlogs(data.results || []); // Check the value of the blogs state
         setIsLoading(false);
       } catch (error) {
-        console.error("Error fetching blogs:", error);
       }
     };
     fetchblogs();
@@ -75,10 +75,16 @@ const BlogsPage = () => {
                 <h2 className="text-xl dark:text-white font-semibold mb-4">
                   {blog.title}
                 </h2>
-                <Link href={{ pathname: '/blog/[slug]', query: { slug: blog.slug } }}>
-  <p className="text-blue-500 hover:text-blue-600">Visit blog</p>
-</Link>
-
+                <Link
+                  href={{
+                    pathname: "/blog/[slug]",
+                    query: { slug: blog.slug },
+                  }}
+                >
+                  <p className="text-blue-500 hover:text-blue-600">
+                    Visit blog
+                  </p>
+                </Link>
               </div>
             </div>
           ))}

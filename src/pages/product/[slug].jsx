@@ -85,9 +85,11 @@ const SingleProductPage = ({ product }) => {
 
 export async function getServerSideProps(context) {
   try {
+    let API_URL = process.env.NEXT_PUBLIC_API_URL || 'api_not detected '
+    console.log(API_URL);
     const { slug } = context.query;
     const response = await fetch(
-      `https://backend.kasimsaifi.tech/api/v1/ecom/products/?slug=${slug}&is_published=true`
+      `${API_URL}/ecom/products/?slug=${slug}&is_published=true`
     );
 
     if (!response.ok) {

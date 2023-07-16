@@ -22,9 +22,10 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
+      let API_URL = process.env.NEXT_PUBLIC_API_URL || 'api_not detected '
       setIsLoading(true);
       const response = await fetch(
-        "https://backend.kasimsaifi.tech/api/v1/portfolio/contacts/",
+        `${API_URL}/portfolio/contacts/`,
         {
           method: "POST",
           headers: {

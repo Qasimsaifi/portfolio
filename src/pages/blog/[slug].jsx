@@ -89,9 +89,11 @@ const SingleBlogPage = ({ blogPost }) => {
 
 export async function getServerSideProps(context) {
   try {
+    let API_URL = process.env.NEXT_PUBLIC_API_URL || 'api_not detected '
+
     const { slug } = context.query;
     const response = await fetch(
-      `https://backend.kasimsaifi.tech/api/v1/portfolio/blog/?slug=${slug}`,
+      `${API_URL}/portfolio/blog/?slug=${slug}`,
       {
         headers: {
           Authorization:
@@ -105,7 +107,7 @@ export async function getServerSideProps(context) {
     }
 
     const data = await response.json();
-    const blogPost = data[0] || null;
+    const blogPost = data.results[0] || null;
 
     if (!blogPost) {
       return {
