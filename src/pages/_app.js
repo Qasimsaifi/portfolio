@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }) {
           property="og:description"
           content="I'm Kasim Saifi, a web developer offering high-quality web development services and products. Contact me to build your website or explore my portfolio."
         />
-        <meta property="og:image" content="https://kasimsaifi.tech/services" />
+        <meta property="og:image" content="https://kasimsaifi.tech/profile-image.png" />
         <meta property="og:url" content="https://kasimsaifi.tech" />
         <meta property="og:type" content="website" />
 
