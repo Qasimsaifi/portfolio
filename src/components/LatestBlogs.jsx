@@ -49,8 +49,8 @@ const LatestBlog = () => {
     );
   } else {
     return (
-      <div className="dark:bg-black bg-white h-full  mx-auto py-10 px-4 md:w-10/12 lg:w-8/12 xl:w-7/12">
-        <h1 className="text-4xl font-bold text-purple-500 text-center mt-20 mb-8">
+      <div className="dark:bg-black bg-white h-full  mx-auto py-10 px-4 md:w-10/12 lg:w-8/12 xl:w-8/12">
+        <h1 className="text-4xl font-bold text-purple-500 text-center mb-8">
          Latest Blogs
         </h1>
 
