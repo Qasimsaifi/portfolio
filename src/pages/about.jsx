@@ -39,7 +39,7 @@ const About = () => {
               </div>
             </div>
             <p className="text-gray-600 dark:text-white text-lg text-center mb-8">
-              Hi there! I'm Qasim Saifi, a passionate web developer hailing from
+              Hi there! I'm Kasim Saifi, a passionate web developer hailing from
               Gawan, a picturesque town nestled in Uttar Pradesh, India. With
               over 2 years of experience, I have devoted myself to mastering the
               art of web development and crafting extraordinary online

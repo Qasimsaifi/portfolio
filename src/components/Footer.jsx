@@ -11,7 +11,7 @@ const Footer = () => {
             className="text-neutral-800 dark:text-neutral-400"
             href="https://kasimsaifi.tech"
           >
-            Qasim saifi
+          Kasim saifi
           </Link>
         </div>
       </footer>
