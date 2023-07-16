@@ -49,12 +49,12 @@ const LatestBlog = () => {
     );
   } else {
     return (
-      <div className="dark:bg-black  bg-white h-full w-full flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold text-blue-500 text-center mt-20 mb-8">
+      <div className="dark:bg-black bg-white h-full  mx-auto py-10 px-4 md:w-10/12 lg:w-8/12 xl:w-7/12">
+        <h1 className="text-4xl font-bold text-purple-500 text-center mt-20 mb-8">
          Latest Blogs
         </h1>
 
-        <div className="grid gap-6 container md:mx-auto sm:grid-cols-2 lg:grid-cols-3 pb-16">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 pb-16">
           {blogs.map((blog) => (
             <div
               className="relative rounded-lg shadow-lg overflow-hidden"
@@ -63,7 +63,7 @@ const LatestBlog = () => {
               onMouseLeave={handleCardLeave}
             >
               <img
-                className={`object-cover h-72 w-full rounded-t-lg ${
+                className={`object-cover h-52 w-full rounded-t-lg ${
                   hoveredCard === blog.id ? "opacity-50" : "opacity-100"
                 } transition-opacity duration-300 ease-in-out`}
                 src={`https://res.cloudinary.com/dehpkgdw5/${blog.image}`}

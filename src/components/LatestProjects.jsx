@@ -50,12 +50,12 @@ const LatestProjects = () => {
     );
   } else {
     return (
-      <div className="dark:bg-black bg-white h-full w-full flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold text-blue-500 pb-10">
+      <div className="dark:bg-black bg-white h-full  mx-auto px-4 md:w-10/12 lg:w-8/12 xl:w-7/12">
+        <h1 className="text-4xl text-center  font-bold text-purple-500 pb-10">
           Latest Projects
         </h1>
 
-        <div className="grid gap-6 container md:mx-auto sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.length > 0 ? (
             projects.map((project) => (
               <div
@@ -65,7 +65,7 @@ const LatestProjects = () => {
                 onMouseLeave={handleCardLeave}
               >
                 <img
-                  className={`object-cover h-72 w-full rounded-t-lg ${
+                  className={`object-cover h-52 w-full rounded-t-lg ${
                     hoveredCard === project.id ? "opacity-50" : "opacity-100"
                   } transition-opacity duration-300 ease-in-out`}
                   src={`https://res.cloudinary.com/dehpkgdw5/${project.image}`}
@@ -76,10 +76,10 @@ const LatestProjects = () => {
                     hoveredCard === project.id ? "bottom-0" : "-bottom-full"
                   } transition-all duration-300 ease-in-out absolute backdrop-blur bg-opacity-75 p-6 w-full`}
                 >
-                  <h2 className="text-xl dark:text-white font-semibold mb-4">
+                  <h2 className="text-xl dark:text-white font-semibold ">
                     {project.title}
                   </h2>
-                  <p className="dark:text-white">{project.description}</p>
+                  <p className="dark:text-white text-sm">{project.description}</p>
                   {project.link && (
                     <Link href={project.link} passHref>
                       <p className="text-blue-500 hover:text-blue-600">
