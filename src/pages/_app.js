@@ -2,8 +2,17 @@ import "@/styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import NextNProgress from "nextjs-progressbar";
 import Head from "next/head";
+import "@etchteam/next-pagination/dist/index.css";
+import { useEffect, useState } from "react";
+import React from "react";
+import LoadingScreen from "@/components/LoadingScreen";
 
 export default function App({ Component, pageProps }) {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 1000);
+  }, []);
   return (
     <>
       <Head>
@@ -68,10 +77,14 @@ export default function App({ Component, pageProps }) {
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="format-detection" content="telephone=no" />
       </Head>
-      <ThemeProvider enableSystem={true} attribute="class">
-        <NextNProgress color="#A855F7" />
-        <Component {...pageProps} />
-      </ThemeProvider>
+      {!loading ? (
+        <ThemeProvider enableSystem={true} attribute="class">
+          <NextNProgress color="#A855F7" />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      ) : (
+        <LoadingScreen />
+      )}
     </>
   );
 }

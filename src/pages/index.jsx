@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import Head from "next/head";
+import LatestProjects from "@/components/LatestProjects";
+import LatestBlog from "@/components/LatestBlogs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +20,8 @@ export default function Home() {
 
       <NavBar />
       <Homepage />
+      <LatestProjects/>
+      <LatestBlog/>
       <Footer/>
     </>
   );
