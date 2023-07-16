@@ -17,7 +17,7 @@ const BlogsPage = () => {
         const page = router.query.page || 1;
         const pageSize = 6; // Change this value to your desired page size (6 for six posts per page)
         const response = await fetch(
-          `${API_URL}/portfolio/blog/?is_published=true&page=${page}&page_size=${pageSize}`,
+          `${API_URL}/portfolio/blog/?is_published=true&ordering=-created_at&page=${page}&page_size=${pageSize}`,
           {
             headers: {
               Authorization:

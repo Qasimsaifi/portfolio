@@ -13,7 +13,7 @@ const LatestBlog = () => {
       try {
         const API_URL = process.env.NEXT_PUBLIC_API_URL || "api_not detected";
         const response = await fetch(
-          `${API_URL}/portfolio/blog/?is_published=true&page=1&page_size=6`, // Fetch only 6 blog posts
+          `${API_URL}/portfolio/blog/?is_published=true&ordering=-created_at&page=1&page_size=6`, // Fetch only 6 blog posts
           {
             headers: {
               Authorization:
