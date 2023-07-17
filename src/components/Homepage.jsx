@@ -16,7 +16,7 @@ const Homepage = () => {
         <div className="text-center sm:mr-4">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-purple-500">Hi, I'm Kasim</h1>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-8 text-gray-800 dark:text-white">
-            I'm a <Typewriter texts={['Developer', 'Designer']} speed={220} />
+            I'm a <Typewriter texts={['Developer', 'Designer']} speed={220} />|
           </h2>
           
          

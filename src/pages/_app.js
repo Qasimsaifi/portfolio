@@ -2,7 +2,6 @@ import "@/styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import NextNProgress from "nextjs-progressbar";
 import Head from "next/head";
-import "@etchteam/next-pagination/dist/index.css";
 import { useEffect, useState } from "react";
 import React from "react";
 import LoadingScreen from "@/components/LoadingScreen";

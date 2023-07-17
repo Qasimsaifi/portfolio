@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Link from "next/link";
+import RazorpayPaymentButton from "@/components/RazorpayPaymentButton";
 
 const SingleProductPage = ({ product }) => {
   const router = useRouter();
@@ -57,7 +58,7 @@ const SingleProductPage = ({ product }) => {
                   {product.name}
                 </h1>
                 <h2 className="text-xl md:text-2xl font-bold">
-                ₹{product.price}
+                  ₹{product.price}
                 </h2>
                 <div className="prose">
                   <div
@@ -66,10 +67,12 @@ const SingleProductPage = ({ product }) => {
                   />
                 </div>
                 <div className="flex justify-center md:justify-start mt-6">
-                  <button className="bg-purple-600 px-5 py-3 dark:text-white text-black hover:bg-purple-500 rounded-lg w-full md:w-auto text-center">
-                    <Link target="blank" href={product.file}>
-                      Buy Now
-                    </Link>
+                  <button className=" rounded-lg w-full md:w-auto text-center">
+                    
+                  <form>
+                    <RazorpayPaymentButton paymentId={product.payment_link}/>
+                    {/* Other form elements */}
+                  </form>
                   </button>
                 </div>
               </div>
@@ -85,7 +88,7 @@ const SingleProductPage = ({ product }) => {
 
 export async function getServerSideProps(context) {
   try {
-    let API_URL = process.env.NEXT_PUBLIC_API_URL || 'api_not detected '
+    let API_URL = process.env.NEXT_PUBLIC_API_URL || "api_not detected ";
     console.log(API_URL);
     const { slug } = context.query;
     const response = await fetch(

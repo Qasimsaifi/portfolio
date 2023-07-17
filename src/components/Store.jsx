@@ -68,9 +68,9 @@ const Store = () => {
                     ₹{product.price}
                   </span>
                   <span className="text-sm line-through text-gray-500">
-                    ₹199
+                  ₹{(product.price * 1.4).toFixed(2)}
                   </span>
-                  <span className="text-sm text-red-700">100% off</span>
+                  <span className="text-sm text-red-700">40% off</span>
                 </p>
 
                 <div className="flex justify-between items-center pt-3 pb-2">
