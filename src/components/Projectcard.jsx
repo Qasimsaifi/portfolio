@@ -153,8 +153,8 @@ const ProjectCard = () => {
                 </h2>
                 <p className="dark:text-white">{project.description}</p>
                 {project.link && (
-                  <Link href={project.link} passHref>
-                    <p className="text-blue-500 hover:text-blue-600">
+                  <Link target="blank" href={project.link} passHref>
+                    <p className="copy-button text-center bg-purple-600 w-20 mt-2">
                       Visit Project
                     </p>
                   </Link>
