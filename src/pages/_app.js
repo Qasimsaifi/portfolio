@@ -18,10 +18,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <meta
-          name="description"
-          content="I'm Kasim Saifi, a web developer offering high-quality web development services and products. Contact me to build your website or explore my portfolio."
-        />
+        
         <meta
           property="og:title"
           content="Kasim Saifi - Web Development Services and Products"
