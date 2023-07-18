@@ -61,7 +61,32 @@ const SingleBlogPage = ({ blogPost }) => {
   return (
     <>
       <Head>
-        <title>{blogPost.title}</title>
+      <title>{blogPost.title}</title>
+        <meta name="description" content={blogPost.content} />
+
+        {/* Open Graph (OG) Tags */}
+        <meta property="og:title" content={blogPost.title} />
+        <meta property="og:description" content={blogPost.content} />
+        <meta property="og:image" content={`https://res.cloudinary.com/dehpkgdw5/${blogPost.image}`} />
+        <meta property="og:url" content={router.asPath} />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="KASIM" />
+        <meta property="og:locale" content="en_US" />
+
+        {/* Twitter Card Tags */}
+        <meta name="twitter:title" content={blogPost.title} />
+        <meta name="twitter:description" content={blogPost.content} />
+        <meta name="twitter:image" content={`https://res.cloudinary.com/dehpkgdw5/${blogPost.image}`} />
+
+        {/* Additional Meta Tags */}
+        <meta name="author" content={blogPost.author} />
+        <meta name="keywords" content={blogPost.keywords.join(", ")} />
+        <meta name="article:published_time" content={blogPost.created_at} />
+               <meta name="article:modified_time" content={blogPost.updated_at} />
+        <meta name="article:section" content={blogPost.category} />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href={`https://kasimsaifi.tech/blog/${blogPost.slug}`} />
       </Head>
       <NavBar />
 

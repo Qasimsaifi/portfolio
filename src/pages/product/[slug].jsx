@@ -28,6 +28,24 @@ const SingleProductPage = ({ product }) => {
     <>
       <Head>
         <title>{product.name}</title>
+        <meta name="description" content={product.description} />
+
+        {/* Open Graph (OG) Tags */}
+        <meta property="og:title" content={product.name} />
+        <meta property="og:description" content={product.description} />
+        <meta property="og:image" content={product.image_urls[0]} />
+        <meta property="og:url" content={router.asPath} />
+        <meta property="og:type" content="product" />
+        <meta property="og:site_name" content="KASIM" />
+        <meta property="og:locale" content="en_US" />
+
+        {/* Twitter Card Tags */}
+        <meta name="twitter:title" content={product.name} />
+        <meta name="twitter:description" content={product.description} />
+        <meta name="twitter:image" content={product.image_urls[0]} />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href={`https://kasimsaifi.tech/product/${product.id}`} />
       </Head>
       <NavBar />
 
@@ -68,11 +86,10 @@ const SingleProductPage = ({ product }) => {
                 </div>
                 <div className="flex justify-center md:justify-start mt-6">
                   <button className=" rounded-lg w-full md:w-auto text-center">
-                    
-                  <form>
-                    <RazorpayPaymentButton paymentId={product.payment_link}/>
-                    {/* Other form elements */}
-                  </form>
+                    <form>
+                      <RazorpayPaymentButton paymentId={product.payment_link} />
+                      {/* Other form elements */}
+                    </form>
                   </button>
                 </div>
               </div>
