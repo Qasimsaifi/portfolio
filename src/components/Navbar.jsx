@@ -24,7 +24,7 @@ function NavBar() {
         <nav className="w-full fixed  top-0 left-0 right-0 z-10 border-b border-gray-500 bg-white dark:bg-black">
           <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
             <div>
-              <div className="flex items-center justify-between py-3 md:py-5  md:block">
+              <div className="flex items-center justify-between py-1   md:block">
                 {/* LOGO */}
                 <Link href="/">
                   <h2 className="text-2xl text-purple-600 font-bold ">KASIM</h2>
@@ -61,7 +61,7 @@ function NavBar() {
                   navbar ? "p-12 md:p-0 block" : "hidden"
                 }`}
               >
-                <ul className="h-screen md:h-auto items-center justify-center md:flex mt-3 ">
+                <ul className="h-screen md:h-auto items-center justify-center md:flex mt-2">
                   <li className="pb-6 text-xl text-black  dark:text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                     <Link href="/" onClick={() => setNavbar(!navbar)}>
                       Home
