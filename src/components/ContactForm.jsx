@@ -155,7 +155,7 @@ const ContactForm = () => {
                       Website Feedback
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
-                      feedback@kasimsaifi.tech
+                    kasimthecoder@gmail.com
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
                       +91 9758334481
@@ -175,7 +175,7 @@ const ContactForm = () => {
                       Partnerships
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
-                      partnerships@kasimsaifi.tech
+                    kasimthecoder@gmail.com
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
                       +91 9758334481
@@ -195,7 +195,7 @@ const ContactForm = () => {
                       Collaborations
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
-                      collaborations@kasimsaifi.tech
+                    kasimthecoder@gmail.com
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
                       +91 9758334481
@@ -216,7 +216,7 @@ const ContactForm = () => {
                       General Inquiries
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
-                      info@kasimsaifi.tech
+                    kasimthecoder@gmail.com
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
                       +91 9758334481
