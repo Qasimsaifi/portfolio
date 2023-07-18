@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import NavBar from "@/components/Navbar";
 import Link from "next/link";
 
@@ -60,10 +61,9 @@ export default function TermsAndConditions() {
           If you have any questions about our terms and conditions, please
           contact us at kasimthecoder@gmail.com.
         </p>
-        <Link href="/" className="text-blue-500 hover:underline">
-          Go back to Home
-        </Link>
+        
       </div>
+      <Footer/>     
     </>
   );
 }

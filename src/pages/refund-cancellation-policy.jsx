@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import NavBar from '@/components/Navbar';
 import Link from 'next/link';
 
@@ -40,8 +41,9 @@ export default function RefundCancellationPolicy() {
       <p className="text-xl mb-8">
         For any refund or cancellation related queries, please contact our support team at kasimthecoder@gmail.com
       </p>
-      <Link href="/" className="text-blue-500 hover:underline">Go back to Home</Link>
+      
     </div>
+    <Footer/>
     </>
   );
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Footer from './Footer';
 
 export default function PrivacyPolicy() {
   return (
@@ -34,7 +35,7 @@ export default function PrivacyPolicy() {
       <p className="mb-8">
         If you have any questions or concerns about our privacy practices, please contact us at  kasimthecoder@gmail.com
       </p>
-      <Link href="/" className="text-blue-500 hover:underline">Go back to Home</Link>
+     <Footer/>
     </div>
   );
 }
