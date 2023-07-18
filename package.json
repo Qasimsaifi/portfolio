@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@bradgarropy/next-google-analytics": "^1.0.2",
     "@react-pdf/renderer": "^3.1.12",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",
