@@ -6,7 +6,7 @@ import Script from "next/script";
 import { useEffect, useState } from "react";
 import React from "react";
 import LoadingScreen from "@/components/LoadingScreen";
-import GoogleAnalytics from "@bradgarropy/next-google-analytics"
+import GoogleAnalytics from "@bradgarropy/next-google-analytics";
 
 export default function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
@@ -16,7 +16,6 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <>
-     
       <Head>
         <meta charSet="utf-8" />
         <meta
@@ -24,18 +23,12 @@ export default function App({ Component, pageProps }) {
           content="I'm Kasim Saifi, a web developer offering high-quality web development services and products. Contact me to build your website or explore my portfolio."
         />
         <meta
-          name="keywords"
-          content="web development, web developer, portfolio, services, products, Kasim Saifi"
+          property="og:title"
+          content="Kasim Saifi - Web Development Services and Products"
         />
         <meta name="author" content="Kasim Saifi" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* Open Graph meta tags */}
-        <meta
-          property="og:title"
-          content="Kasim Saifi - Web Development Services and Products"
-        />
         <meta
           property="og:description"
           content="I'm Kasim Saifi, a web developer offering high-quality web development services and products. Contact me to build your website or explore my portfolio."
@@ -61,7 +54,6 @@ export default function App({ Component, pageProps }) {
           content="https://kasimsaifi.tech/profile-image.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
-
         {/* Additional meta tags */}
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />

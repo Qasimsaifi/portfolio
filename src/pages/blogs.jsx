@@ -9,6 +9,7 @@ const blog = () => {
     <>
       <Head>
         <title>Web Development Blog: Stay Updated with Kasim Saifi's Expert Insights and Trends</title>
+        <meta name="description" content="Explore our portfolio of successful web development projects. At KASIM, we have helped numerous clients achieve their online goals through innovative designs, seamless functionality, and user-friendly interfaces. Discover our expertise today."></meta>
       </Head>
       <NavBar />
       <BlogsPage />

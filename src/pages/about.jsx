@@ -19,6 +19,7 @@ const About = () => {
     <>
     <Head>
         <title>About Kasim Saifi - Web Developer and Entrepreneur</title>
+        <meta name="description" content="Learn more about KASIM, a leading provider of web development services. Our experienced team is dedicated to creating customized solutions that meet your business goals. Discover our expertise and commitment to client satisfaction."></meta>
       </Head>
       <NavBar />
       <section className="bg-white dark:bg-black mt-16">

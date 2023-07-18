@@ -16,6 +16,14 @@ export default function Home() {
     <main className="dark:bg-black bg-white">
       <Head>
         <title>Web Development Services - Kasim Saifi</title>
+        <meta name="description" content="Welcome to KASIM! We offer professional web development services and a wide range of products to help you establish a strong online presence. Explore our portfolio and contact us for all your web development needs."></meta>
+       
+        <meta
+          name="keywords"
+          content="web development, kasimsaifi , kasim , saifi , kasim web , web developer, portfolio, services, products, Kasim Saifi"
+        />
+        
+        
       </Head>
 
       <NavBar />
