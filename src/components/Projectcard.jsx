@@ -1,10 +1,11 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const ProjectCard = () => {
   const [projects, setProjects] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [hoveredCard, setHoveredCard] = useState(null);
   const [currentPage, setCurrentPage] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
@@ -69,11 +70,21 @@ const ProjectCard = () => {
           </button>
         );
       }
+
+      if (isLoading) {
+        return (
+          <div className="flex items-center justify-center h-screen">
+            <span className="loader"></span>
+          </div>
+        );
+      } else {
       return (
         <div className="flex justify-center mt-4 text-black dark:text-white">
           <button
             className={`px-2 py-1 rounded-md mx-1 focus:outline-none ${
-              currentPage === 1 ? "bg-purple-400 cursor-not-allowed" : "bg-purple-400"
+              currentPage === 1
+                ? "bg-purple-400 cursor-not-allowed"
+                : "bg-purple-400"
             } transition-colors duration-300 hover:bg-gray-300 ${
               currentPage === 1 ? "" : "hover:text-gray-900"
             }`}
@@ -85,7 +96,9 @@ const ProjectCard = () => {
           {pages}
           <button
             className={`px-2 py-1 rounded-md mx-1 focus:outline-none ${
-              currentPage === totalPages ? "bg-purple-400 cursor-not-allowed" : "bg-purple-400"
+              currentPage === totalPages
+                ? "bg-purple-400 cursor-not-allowed"
+                : "bg-purple-400"
             } transition-colors duration-300 hover:bg-gray-300 ${
               currentPage === totalPages ? "" : "hover:text-gray-900"
             }`}
@@ -95,17 +108,17 @@ const ProjectCard = () => {
             Next
           </button>
         </div>
-      );
+      );}
     }
     return null;
   };
 
   if (isLoading) {
-    return (
-      <div className="flex items-center justify-center h-screen">
-        <span className="loader"></span>
-      </div>
-    );
+   return(
+    <div className="flex items-center justify-center h-screen">
+    <span className="loader"></span>
+  </div>
+   )
   } else {
     return (
       <div className="dark:bg-dark container md:mx-auto px-4 h-screen">
@@ -121,12 +134,14 @@ const ProjectCard = () => {
               onMouseEnter={() => handleCardHover(project.id)}
               onMouseLeave={handleCardLeave}
             >
-              <img
+              <Image
                 className={`object-cover h-72 w-full rounded-t-lg ${
                   hoveredCard === project.id ? "opacity-50" : "opacity-100"
                 } transition-opacity duration-300 ease-in-out`}
                 src={`https://res.cloudinary.com/dehpkgdw5/${project.image}`}
                 alt={project.title}
+                height={1000}
+                width={1000}
               />
               <div
                 className={`${
@@ -139,7 +154,9 @@ const ProjectCard = () => {
                 <p className="dark:text-white">{project.description}</p>
                 {project.link && (
                   <Link href={project.link} passHref>
-                    <p className="text-blue-500 hover:text-blue-600">Visit Project</p>
+                    <p className="text-blue-500 hover:text-blue-600">
+                      Visit Project
+                    </p>
                   </Link>
                 )}
               </div>

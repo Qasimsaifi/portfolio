@@ -8,6 +8,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Link from "next/link";
 import RazorpayPaymentButton from "@/components/RazorpayPaymentButton";
+import Image from "next/image";
 
 const SingleProductPage = ({ product }) => {
   const router = useRouter();
@@ -45,7 +46,10 @@ const SingleProductPage = ({ product }) => {
         <meta name="twitter:image" content={product.image_urls[0]} />
 
         {/* Canonical URL */}
-        <link rel="canonical" href={`https://kasimsaifi.tech/product/${product.id}`} />
+        <link
+          rel="canonical"
+          href={`https://kasimsaifi.tech/product/${product.id}`}
+        />
       </Head>
       <NavBar />
 
@@ -60,10 +64,12 @@ const SingleProductPage = ({ product }) => {
                 >
                   {product.image_urls.map((imageUrl, index) => (
                     <div key={index}>
-                      <img
+                      <Image
                         src={imageUrl}
                         alt={`Image ${index + 1}`}
                         className="h-96  object-contain rounded"
+                        height={2000}
+                        width={2000}
                       />
                     </div>
                   ))}

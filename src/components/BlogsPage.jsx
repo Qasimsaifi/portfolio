@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
@@ -123,12 +124,14 @@ const BlogsPage = () => {
               onMouseEnter={() => handleCardHover(blog.id)}
               onMouseLeave={handleCardLeave}
             >
-              <img
+              <Image
                 className={`object-cover h-72 w-full rounded-t-lg ${
                   hoveredCard === blog.id ? "opacity-50" : "opacity-100"
                 } transition-opacity duration-300 ease-in-out`}
                 src={`https://res.cloudinary.com/dehpkgdw5/${blog.image}`}
                 alt={blog.title}
+                height={1000}
+                width={1000}
               />
               <div
                 className={`${

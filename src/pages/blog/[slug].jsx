@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import NavBar from "@/components/Navbar";
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
+import Image from "next/image";
 import Head from "next/head";
 import Footer from "@/components/Footer";
 import "prism-themes/themes/prism-material-oceanic.css";
@@ -116,10 +117,12 @@ const SingleBlogPage = ({ blogPost }) => {
           </p>
           <p className="text-gray-500 dark:text-gray-300 text-sm">Created at: {createdAtDate}</p>
         </div>
-        <img
+        <Image
           src={`https://res.cloudinary.com/dehpkgdw5/${blogPost.image}`}
           alt={blogPost.title}
           className="w-full h-auto rounded-lg mb-2"
+          width={100000}
+          height={100000}
         />
 
         <div className="prose">

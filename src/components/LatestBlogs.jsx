@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
@@ -51,7 +52,7 @@ const LatestBlog = () => {
     return (
       <div className="dark:bg-black bg-white h-full  mx-auto py-10 px-4 md:w-10/12 lg:w-8/12 xl:w-8/12">
         <h1 className="text-4xl font-bold text-purple-500 text-center mb-8">
-         Latest Blogs
+          Latest Blogs
         </h1>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 pb-16">
@@ -62,12 +63,14 @@ const LatestBlog = () => {
               onMouseEnter={() => handleCardHover(blog.id)}
               onMouseLeave={handleCardLeave}
             >
-              <img
+              <Image
                 className={`object-cover h-52 w-full rounded-t-lg ${
                   hoveredCard === blog.id ? "opacity-50" : "opacity-100"
                 } transition-opacity duration-300 ease-in-out`}
                 src={`https://res.cloudinary.com/dehpkgdw5/${blog.image}`}
                 alt={blog.title}
+                height={1000}
+                width={1000}
               />
               <div
                 className={`${
