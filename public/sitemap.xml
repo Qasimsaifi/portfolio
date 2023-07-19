@@ -1,205 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-          http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-  <url>
-    <loc>https://kasimsaifi.tech/</loc>
-    <lastmod>2023-07-15T12:18:48+00:00</lastmod>
-    <priority>1.00</priority>
-    <tags>
-      <tag>web developer</tag>
-      <tag>web development</tag>
-      <tag>web design</tag>
-      <tag>frontend development</tag>
-      <tag>backend development</tag>
-      <tag>software development</tag>
-      <tag>website development</tag>
-      <tag>web services</tag>
-      <tag>web projects</tag>
-      <tag>web portfolio</tag>
-      <tag>responsive design</tag>
-      <tag>website builder</tag>
-      <tag>website design</tag>
-      <tag>website portfolio</tag>
-      <tag>website products</tag>
-      <tag>web solutions</tag>
-      <tag>website development services</tag>
-      <tag>web technology</tag>
-      <tag>professional web developer</tag>
-      <tag>contact web developer</tag>
-    </tags>
-    <category>Home</category>
-  </url>
-  <url>
-    <loc>https://kasimsaifi.tech/about</loc>
-    <lastmod>2023-07-15T12:18:48+00:00</lastmod>
-    <priority>0.80</priority>
-    <tags>
-      <tag>web developer</tag>
-      <tag>web development</tag>
-      <tag>company</tag>
-      <tag>team</tag>
-      <tag>mission</tag>
-      <tag>vision</tag>
-      <tag>history</tag>
-      <tag>values</tag>
-      <tag>culture</tag>
-      <tag>portfolio</tag>
-      <tag>clients</tag>
-      <tag>services</tag>
-      <tag>awards</tag>
-      <tag>testimonials</tag>
-      <tag>partners</tag>
-      <tag>achievements</tag>
-      <tag>CSR</tag>
-      <tag>community</tag>
-      <tag>work culture</tag>
-      <tag>innovation</tag>
-    </tags>
-    <category>About</category>
-  </url>
-  <url>
-    <loc>https://kasimsaifi.tech/blogs</loc>
-    <lastmod>2023-07-15T12:18:48+00:00</lastmod>
-    <priority>0.80</priority>
-    <tags>
-      <tag>web developer</tag>
-      <tag>web development</tag>
-      <tag>web design</tag>
-      <tag>frontend development</tag>
-      <tag>backend development</tag>
-      <tag>coding</tag>
-      <tag>tips</tag>
-      <tag>tutorials</tag>
-      <tag>latest trends</tag>
-      <tag>industry insights</tag>
-      <tag>best practices</tag>
-      <tag>SEO</tag>
-      <tag>responsive design</tag>
-      <tag>JavaScript</tag>
-      <tag>React</tag>
-      <tag>Node.js</tag>
-      <tag>Python</tag>
-      <tag>PHP</tag>
-      <tag>UI/UX</tag>
-      <tag>mobile apps</tag>
-    </tags>
-    <category>Blogs</category>
-  </url>
-  <url>
-    <loc>https://kasimsaifi.tech/contact</loc>
-    <lastmod>2023-07-15T12:18:48+00:00</lastmod>
-    <priority>0.80</priority>
-    <tags>
-      <tag>web developer</tag>
-      <tag>contact</tag>
-      <tag>get in touch</tag>
-      <tag>contact us</tag>
-      <tag>send message</tag>
-      <tag>customer support</tag>
-      <tag>business inquiry</tag>
-      <tag>communication</tag>
-      <tag>consultation</tag>
-      <tag>contact form</tag>
-      <tag>reach out</tag>
-      <tag>meeting</tag>
-      <tag>schedule appointment</tag>
-      <tag>email</tag>
-      <tag>phone</tag>
-      <tag>address</tag>
-      <tag>social media</tag>
-      <tag>support</tag>
-      <tag>enquiry</tag>
-      <tag>feedback</tag>
-    </tags>
-    <category>Contact</category>
-  </url>
-  <url>
-    <loc>https://kasimsaifi.tech/services</loc>
-    <lastmod>2023-07-15T12:18:48+00:00</lastmod>
-    <priority>0.80</priority>
-    <tags>
-      <tag>web developer</tag>
-      <tag>services</tag>
-      <tag>web development</tag>
-      <tag>website design</tag>
-      <tag>frontend development</tag>
-      <tag>backend development</tag>
-      <tag>software development</tag>
-      <tag>custom solutions</tag>
-      <tag>e-commerce</tag>
-      <tag>mobile apps</tag>
-      <tag>content management</tag>
-      <tag>UI/UX</tag>
-      <tag>user experience</tag>
-      <tag>SEO</tag>
-      <tag>analytics</tag>
-      <tag>web maintenance</tag>
-      <tag>consulting</tag>
-      <tag>technology integration</tag>
-      <tag>upgrade services</tag>
-      <tag>performance optimization</tag>
-    </tags>
-    <category>Services</category>
-  </url>
-  <url>
-    <loc>https://kasimsaifi.tech/projects</loc>
-    <lastmod>2023-07-15T12:18:48+00:00</lastmod>
-    <priority>0.80</priority>
-    <tags>
-      <tag>web developer</tag>
-      <tag>projects</tag>
-      <tag>web development</tag>
-      <tag>portfolio</tag>
-      <tag>case studies</tag>
-      <tag>web applications</tag>
-      <tag>client projects</tag>
-      <tag>successful projects</tag>
-      <tag>web design</tag>
-      <tag>frontend development</tag>
-      <tag>backend development</tag>
-      <tag>responsive design</tag>
-      <tag>technology stack</tag>
-      <tag>project showcase</tag>
-      <tag>business solutions</tag>
-      <tag>project management</tag>
-      <tag>client testimonials</tag>
-      <tag>project highlights</tag>
-      <tag>web development examples</tag>
-      <tag>project success stories</tag>
-    </tags>
-    <category>Projects</category>
-  </url>
-  <url>
-    <loc>https://kasimsaifi.tech/store</loc>
-    <lastmod>2023-07-15T12:18:48+00:00</lastmod>
-    <priority>0.80</priority>
-    <tags>
-      <tag>web developer</tag>
-      <tag>store</tag>
-      <tag>products</tag>
-      <tag>web products</tag>
-      <tag>digital products</tag>
-      <tag>web templates</tag>
-      <tag>web themes</tag>
-      <tag>web assets</tag>
-      <tag>web tools</tag>
-      <tag>web resources</tag>
-      <tag>web services</tag>
-      <tag>website components</tag>
-      <tag>web plugins</tag>
-      <tag>web scripts</tag>
-      <tag>web frameworks</tag>
-      <tag>web kits</tag>
-      <tag>web graphics</tag>
-      <tag>web elements</tag>
-      <tag>web icons</tag>
-      <tag>web bundles</tag>
-    </tags>
-    <category>Store</category>
-  </url>
+
+<url>
+  <loc>https://kasimsaifi.tech/</loc>
+  <lastmod>2023-07-15T12:18:48+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kasimsaifi.tech/about</loc>
+  <lastmod>2023-07-15T12:18:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kasimsaifi.tech/blogs</loc>
+  <lastmod>2023-07-15T12:18:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kasimsaifi.tech/contact</loc>
+  <lastmod>2023-07-15T12:18:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kasimsaifi.tech/services</loc>
+  <lastmod>2023-07-15T12:18:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kasimsaifi.tech/projects</loc>
+  <lastmod>2023-07-15T12:18:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kasimsaifi.tech/store</loc>
+  <lastmod>2023-07-15T12:18:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
