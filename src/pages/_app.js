@@ -18,6 +18,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta charSet="utf-8" />
+        <title>Web Development Services - Kasim Saifi</title>
         
         <meta
           property="og:title"
