@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
     <div className="max-w-3xl mx-auto px-4 py-8 mt-12">
       <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
       <p className="mb-4">
-        Thank you for visiting our website. This privacy policy explains how we collect, use, and protect your personal information when you use our services.
+        Thank you for visiting our website. This privacy policy explains how we collect, use, and protect your personal information when you use our services, including the use of Google AdSense for ad serving and personalization.
       </p>
       <h2 className="text-2xl font-bold mb-4">Information We Collect</h2>
       <p className="mb-4">
@@ -19,6 +19,10 @@ export default function PrivacyPolicy() {
       <h2 className="text-2xl font-bold mb-4">Information Sharing</h2>
       <p className="mb-4">
         We value your privacy and do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as required by law. We may share your information with trusted service providers who assist us in operating our website, conducting business, or servicing you, as long as they agree to keep your information confidential.
+      </p>
+      <h2 className="text-2xl font-bold mb-4">Google AdSense</h2>
+      <p className="mb-4">
+        Our website uses Google AdSense, a third-party advertising service provided by Google. Google AdSense may use cookies and other tracking technologies to serve personalized ads based on your browsing activities and interests. You can learn more about how Google uses your data and how to manage your ad personalization preferences by visiting Google's <Link href="https://policies.google.com/technologies/partner-sites">Ads Personalization</Link> page.
       </p>
       <h2 className="text-2xl font-bold mb-4">Data Security</h2>
       <p className="mb-4">
@@ -33,9 +37,9 @@ export default function PrivacyPolicy() {
         We may update this privacy policy from time to time without prior notice. Any changes will be effective immediately upon posting on this page. We encourage you to review this privacy policy periodically to stay informed about how we protect your information.
       </p>
       <p className="mb-8">
-        If you have any questions or concerns about our privacy practices, please contact us at  kasimthecoder@gmail.com
+        If you have any questions or concerns about our privacy practices, please contact us at kasimthecoder@gmail.com
       </p>
-     <Footer/>
+      <Footer />
     </div>
   );
 }
