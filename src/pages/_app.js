@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import React from "react";
 import LoadingScreen from "@/components/LoadingScreen";
 import GoogleAnalytics from "@bradgarropy/next-google-analytics";
+import AdSenseComponent from "@/components/AdSenseComponent";
 
 export default function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <>
+    <AdSenseComponent/>
       <Head>
         <meta charSet="utf-8" />
         <title>Web Development Services - Kasim Saifi</title>
