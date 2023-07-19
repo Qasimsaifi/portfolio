@@ -27,6 +27,14 @@ export default function App({ Component, pageProps }) {
         <meta name="author" content="Kasim Saifi" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Welcome to KASIM! We offer professional web development services and a wide range of products to help you establish a strong online presence. Explore our portfolio and contact us for all your web development needs."></meta>
+        <meta
+          property="og:title"
+          content="Kasim Saifi - Web Development Services and Products"
+        />
+        <meta name="author" content="Kasim Saifi" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:description"
           content="I'm Kasim Saifi, a web developer offering high-quality web development services and products. Contact me to build your website or explore my portfolio."
@@ -68,6 +76,10 @@ export default function App({ Component, pageProps }) {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="format-detection" content="telephone=no" />
+        <meta
+          name="keywords"
+          content="web development, kasimsaifi , kasim , saifi , kasim web , web developer, portfolio, services, products, Kasim Saifi"
+        />
       </Head>
       <GoogleAnalytics measurementId="G-6H0BN7R836" />
 
