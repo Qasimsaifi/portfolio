@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
+import Breadcrumb from "./Breadcrumb";
 
 const BlogsPage = () => {
   const [blogs, setBlogs] = useState([]);
@@ -10,6 +11,14 @@ const BlogsPage = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
   const router = useRouter();
+
+
+  const breadcrumbPaths = [
+    { url: '/', label: 'Home' },
+    { url: null, label: 'Blogs' },// Set the URL to null since it's the current page
+  ];
+
+
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -72,6 +81,7 @@ const BlogsPage = () => {
         );
       }
       return (
+
         <div className="flex justify-center mt-4 text-black dark:text-white">
           <button
             className={`px-2 py-1 rounded-md mx-1 focus:outline-none ${
@@ -111,10 +121,9 @@ const BlogsPage = () => {
     );
   } else {
     return (
-      <div className="dark:bg-dark container md:mx-auto px-4 h-screen">
-        <h1 className="text-4xl font-bold text-blue-500 text-center mt-20 mb-8">
-          Blogs
-        </h1>
+      <div className="dark:bg-dark container md:mx-auto mt-20 px-4 h-screen">
+
+          <Breadcrumb paths={breadcrumbPaths} />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {blogs.map((blog) => (

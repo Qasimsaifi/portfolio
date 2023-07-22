@@ -8,10 +8,18 @@ import Footer from "@/components/Footer";
 import "prism-themes/themes/prism-material-oceanic.css";
 import Prism from "prismjs";
 import Clipboard from "clipboard";
+import Breadcrumb from "@/components/Breadcrumb";
 
 const SingleBlogPage = ({ blogPost }) => {
   const router = useRouter();
   const contentRef = useRef(null);
+
+
+  const breadcrumbPaths = [
+    { url: '/', label: 'Home' },
+    { url: '/blogs', label: 'Blogs' },
+    { url: null, label: blogPost.slug }, // Set the URL to null since it's the current page
+  ];
 
   useEffect(() => {
     if (contentRef.current) {
@@ -104,18 +112,17 @@ const SingleBlogPage = ({ blogPost }) => {
       </Head>
       <NavBar />
 
-      <div className="container lg:w-8/12 mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <h1 className="text-2xl sm:text-5xl lg:text-4xl font-bold mb-8 mt-16 text-black dark:text-white">
+      <div className="container lg:w-8/12 mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-16">
+      <Breadcrumb paths={breadcrumbPaths} />
+        <h1 className="text-1xl sm:text-5xl lg:text-4xl font-bold mb-3  text-black dark:text-white">
           {blogPost.title}
         </h1>
         <div className="flex flex-row lg:flex-row lg:space-x-6">
           <p className="text-gray-500 dark:text-gray-300 text-sm mb-2 lg:mb-2">
-            Author: {blogPost.author}
+            Author: {blogPost.author} 
           </p>
-          <p className="text-gray-500 dark:text-gray-300 text-sm mb-2 lg:mb-2">
-            Category: {blogPost.category}
-          </p>
-          <p className="text-gray-500 dark:text-gray-300 text-sm">Created at: {createdAtDate}</p>
+        
+          <p className="text-gray-500 dark:text-gray-300 text-sm"> &nbsp; Created at: {createdAtDate}</p>
         </div>
         <Image
           src={`https://res.cloudinary.com/dehpkgdw5/${blogPost.image}`}
