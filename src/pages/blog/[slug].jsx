@@ -114,7 +114,7 @@ const SingleBlogPage = ({ blogPost }) => {
 
       <div className="container lg:w-8/12 mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-16">
       <Breadcrumb paths={breadcrumbPaths} />
-        <h1 className="text-1xl sm:text-5xl lg:text-4xl font-bold mb-3  text-black dark:text-white">
+        <h1 className="text-1xl sm:text-5xl lg:text-4xl font-bold mb-3 w-screen  text-black dark:text-white">
           {blogPost.title}
         </h1>
         <div className="flex flex-row lg:flex-row lg:space-x-6">
