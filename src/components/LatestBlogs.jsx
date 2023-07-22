@@ -1,40 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "api_not detected";
-export async function getServerSideProps() {
-  console.log(API_URL);
-  try {
-    const response = await fetch(
-      `${API_URL}/portfolio/blog/?is_published=true&ordering=-created_at&page=1&page_size=6`, // Fetch only 6 blog posts
-      {
-        headers: {
-          Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkzNTg3Nzg4LCJpYXQiOjE2ODgyMzA5ODgsImp0aSI6IjI4N2QwNTNmYWIyYjQwOTQ4OGVkOTc5ZGU4OTJkOTE2IiwidXNlcl9pZCI6MX0.QtMmMX8pju2nulQkjlw4MoSWi0bTTZfxRqkVTqlCmrk",
-        },
-      }
-    );
 
-    const data = await response.json();
-    const allBlogs = data.results || [];
-    console.log(allBlogs);
-
-    return {
-      props: {
-        blogs: allBlogs,
-      },
-    };
-  } catch (err) {
-    return { props: { blogs: [] }, err };
-    console.log(err);
-  }
-}
-
-const LatestBlog = ({ blogs }) => {
+const LatestBlog = () => {
+  const [blogs, setBlogs] = useState([]);
   const [hoveredCard, setHoveredCard] = useState(null);
-console.log(blogs);
+
   const handleCardHover = (cardId) => {
     setHoveredCard(cardId);
   };
@@ -42,6 +15,30 @@ console.log(blogs);
   const handleCardLeave = () => {
     setHoveredCard(null);
   };
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const response = await fetch(
+          `${API_URL}/portfolio/blog/?is_published=true&ordering=-created_at&page=1&page_size=6`,
+          {
+            headers: {
+              Authorization:
+                "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkzNTg3Nzg4LCJpYXQiOjE2ODgyMzA5ODgsImp0aSI6IjI4N2QwNTNmYWIyYjQwOTQ4OGVkOTc5ZGU4OTJkOTE2IiwidXNlcl9pZCI6MX0.QtMmMX8pju2nulQkjlw4MoSWi0bTTZfxRqkVTqlCmrk",
+            },
+          }
+        );
+
+        const data = await response.json();
+        const allBlogs = data.results || [];
+        setBlogs(allBlogs);
+      } catch (err) {
+        console.error("Error fetching blogs:", err);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
 
   return (
     <div className="dark:bg-black bg-white h-full mx-auto py-10 px-4 md:w-10/12 lg:w-8/12 xl:w-8/12">

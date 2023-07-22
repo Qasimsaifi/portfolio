@@ -17,7 +17,6 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <>
-    <AdSenseComponent/>
       <Head>
         <meta charSet="utf-8" />
         <title>Web Development Services - Kasim Saifi</title>
@@ -83,7 +82,6 @@ export default function App({ Component, pageProps }) {
           content="web development, kasimsaifi , kasim , saifi , kasim web , web developer, portfolio, services, products, Kasim Saifi"
         />
       </Head>
-      <GoogleAnalytics measurementId="G-6H0BN7R836" />
 
       {!loading ? (
         <ThemeProvider enableSystem={true} attribute="class">
