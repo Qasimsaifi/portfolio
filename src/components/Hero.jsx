@@ -79,10 +79,13 @@ const Hero = () => {
                 />
               </h1>
               <p className="py-6">
-                Welcome to my portfolio! I specialize in front-end web
-                development, creating user-friendly and visually appealing
-                websites. Let's build amazing web applications together.
+                Hi, I'm Kasim Saifi, a full-stack web developer from Uttar
+                Pradesh, India. Proficient in HTML, CSS, JavaScript, React,
+                Next.js, Svelte, Python, and Node.js. I specialize in creating
+                user-friendly, visually appealing web solutions. Let's elevate
+                your web applications together!
               </p>
+
               <button className="btn btn-primary">My Work</button>
             </Reveal>
           </div>

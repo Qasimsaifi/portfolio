@@ -57,39 +57,34 @@ const Skills = () => {
 
   return (
     <Fade cascade damping={0.4}>
-      <h2 className="text-5xl font-semibold mb-4 text-center ">My Skills</h2>
-      <div className="w-[80vw] mx-auto min-h-[70vh]">
-        <Reveal keyframes={customImageAnimation}>
-          <div className="flex flex-wrap ">
-            {skills.map((skill, index) => (
-              <div key={index} className="w-1/2 md:w-1/4 mb-12">
-                <div className="shadow-md p-4 rounded-lg ">
-                
-                  <Reveal keyframes={customAnimation}>
-                    <p className="text-lg font-semibold">{skill.name}</p>
-                  </Reveal>
-                  <Reveal keyframes={customImageAnimation}>
-                  <div className="flex justify-center my-4">
-                      <Icon icon={skill.icon} width="150" />
-                    </div>
-                    </Reveal>
-                  <div className="relative pt-1">
-                    <div className="flex h-2 mb-4 overflow-hidden text-xs rounded">
-                      <progress
-                        className="progress progress-primary  w-full"
-                        value={skill.expertise}
-                        max="100"
-                      ></progress>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            ))}
+  <h2 className="text-5xl font-semibold mb-4 text-center">My Skills</h2>
+  <div className="w-full md:w-[80%] mx-auto min-h-[70vh] flex flex-wrap justify-center">
+    {skills.map((skill, index) => (
+      <div key={index} className="w-full sm:w-1/2 md:w-1/4 mb-6 sm:mb-8 md:mb-12 px-2">
+        <div className="shadow-md p-4 rounded-lg h-full flex flex-col justify-between">
+          <Reveal keyframes={customAnimation}>
+            <p className="text-lg font-semibold text-center">{skill.name}</p>
+          </Reveal>
+          <Reveal keyframes={customImageAnimation}>
+            <div className="flex justify-center my-4">
+              <Icon icon={skill.icon} width="150" />
+            </div>
+          </Reveal>
+          <div className="relative pt-1 mt-auto">
+            <div className="flex h-2 mb-4 overflow-hidden text-xs rounded">
+              <progress
+                className="progress progress-primary w-full"
+                value={skill.expertise}
+                max="100"
+              ></progress>
+            </div>
           </div>
-        </Reveal>
+        </div>
       </div>
-    </Fade>
+    ))}
+  </div>
+</Fade>
+
   );
 };
 
