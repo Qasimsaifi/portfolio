@@ -42,9 +42,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="avatar indicator mt-1">
+        <div className="avatar indicator ">
           <span className="indicator-item badge badge-primary">Beta</span>
-          <a className="btn btn-ghost normal-case text-xl">QASIM</a>
+          <a href="/" className="btn btn-ghost normal-case text-xl btn-xs">QASIM</a>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">

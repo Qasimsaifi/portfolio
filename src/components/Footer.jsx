@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer items-center p-4 bg-base-100 border-t border-primary">
+    <footer className="footer items-center p-4 bg-base-100 border-t border-base-300">
       <aside className="items-center grid-flow-col">
         <a className="btn btn-sm btn-ghost normal-case text-xl">QASIM</a>
         <p>&copy; 2023 - Qasim Saifi - All Rights Reserved</p>
