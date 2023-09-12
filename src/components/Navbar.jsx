@@ -42,7 +42,10 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">QASIM</a>
+        <div className="avatar indicator mt-1">
+          <span className="indicator-item badge badge-primary">Beta</span>
+          <a className="btn btn-ghost normal-case text-xl">QASIM</a>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
