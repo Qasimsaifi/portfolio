@@ -57,7 +57,7 @@ const Skills = () => {
 
   return (
     <Fade cascade damping={0.4}>
-      <h2 className="text-5xl font-semibold mb-4 text-center ">My Skill</h2>
+      <h2 className="text-5xl font-semibold mb-4 text-center ">My Skills</h2>
       <div className="w-[80vw] mx-auto min-h-[70vh]">
         <Reveal keyframes={customImageAnimation}>
           <div className="flex flex-wrap ">
