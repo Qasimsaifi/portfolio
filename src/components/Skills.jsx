@@ -3,7 +3,7 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
-
+import { Icon } from "@iconify/react";
 const customAnimation = keyframes`
 from {
     opacity: 0;
@@ -35,21 +35,24 @@ from {
 const Skills = () => {
   // Define your skills and their expertise levels here
   const skills = [
-    { name: "HTML", expertise: 90 },
-    { name: "CSS", expertise: 85 },
-    { name: "JavaScript", expertise: 80 },
-    { name: "React", expertise: 75 },
-    { name: "Node.js", expertise: 86 },
-    { name: "Python", expertise: 60 },
-    { name: "Svelte", expertise: 70 },
-    { name: "Next.js", expertise: 85 },
-    { name: "Express.js", expertise: 70 },
-    { name: "MongoDB", expertise: 75 },
-    { name: "SQL", expertise: 55 },
-    { name: "Git", expertise: 80 },
-    { name: "Redux", expertise: 80 },
-    { name: "TypeScript \u00A0 \u00A0 Learning", expertise: 25 }
-
+    { name: "HTML", expertise: 90, icon: "vscode-icons:file-type-html" },
+    { name: "CSS", expertise: 85, icon: "vscode-icons:file-type-css" },
+    { name: "JavaScript", expertise: 80, icon: "vscode-icons:file-type-js-official" },
+    { name: "React", expertise: 75, icon: "devicon:react" },
+    { name: "Node.js", expertise: 86, icon: "logos:nodejs-icon" },
+    { name: "Python", expertise: 60, icon: "logos:python" },
+    { name: "Svelte", expertise: 70, icon: "devicon:svelte" },
+    { name: "Next.js", expertise: 85, icon: "logos:nextjs-icon" },
+    { name: "Express.js", expertise: 70, icon: "skill-icons:expressjs-light" },
+    { name: "MongoDB", expertise: 75, icon: "devicon:mongodb" },
+    { name: "SQL", expertise: 55, icon: "tabler:sql" },
+    { name: "Git", expertise: 80, icon: "devicon:git" },
+    { name: "Redux", expertise: 80, icon: "devicon:redux" },
+    {
+      name: "TypeScript \u00A0 \u00A0 Learning",
+      expertise: 25,
+      icon: "devicon:typescript",
+    },
   ];
 
   return (
@@ -59,11 +62,17 @@ const Skills = () => {
         <Reveal keyframes={customImageAnimation}>
           <div className="flex flex-wrap ">
             {skills.map((skill, index) => (
-              <div key={index} className="w-1/2 md:w-1/4 mb-4">
-                <div className="shadow-md p-4 rounded-lg">
+              <div key={index} className="w-1/2 md:w-1/4 mb-12">
+                <div className="shadow-md p-4 rounded-lg ">
+                
                   <Reveal keyframes={customAnimation}>
                     <p className="text-lg font-semibold">{skill.name}</p>
                   </Reveal>
+                  <Reveal keyframes={customImageAnimation}>
+                  <div className="flex justify-center my-4">
+                      <Icon icon={skill.icon} width="150" />
+                    </div>
+                    </Reveal>
                   <div className="relative pt-1">
                     <div className="flex h-2 mb-4 overflow-hidden text-xs rounded">
                       <progress
@@ -72,6 +81,7 @@ const Skills = () => {
                         max="100"
                       ></progress>
                     </div>
+                    
                   </div>
                 </div>
               </div>
