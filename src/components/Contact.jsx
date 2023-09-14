@@ -17,6 +17,10 @@ const Contact = async () => {
     <div className="mb-20 mt-4 ">
       <div className="p-6 max-w-md mx-auto rounded-md shadow-md">
         <h2 className="text-2xl font-semibold text-center  mb-8">Contact Us</h2>
+        <img
+          src="https://github.com/Qasimsaifi/image-host/blob/main/iOS-17-wallpaper-dark.jpg"
+          alt=""
+        />
         <form action={handleSubmit}>
           <div className="mb-4">
             <label className="block text-sm font-bold mb-2">Full Name</label>

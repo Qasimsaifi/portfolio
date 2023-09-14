@@ -3,7 +3,7 @@ import pool from "@/db/db";
 export const getData = async () => {
   try {
     const client = await pool.connect();
-    const result = await client.query('SELECT * FROM tesing');
+    const result = await client.query('SELECT * FROM portfolio_projects');
     const data = result.rows;
     client.release();
 
