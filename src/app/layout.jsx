@@ -1,20 +1,31 @@
-import Footer from '@/components/Footer'
-import './globals.css'
-import { Inter } from 'next/font/google'
+import "./globals.css";
+import { ThemeProvider, useTheme } from "@/components/ThemeContext";
+import Layout from "@/components/Layout";
 
-const inter = Inter({ subsets: ['latin'] })
-
+import { Suspense } from "react";
+import Loading from "@/components/Loading";
 export const metadata = {
-  title: 'Qasim Saifi - Full Stack Web Developer Portfolio',
-  description: 'Explore the web development projects and skills of Kasim Saifi.',
-}
+  title: "Qasim Saifi - Full Stack Web Developer Portfolio",
+  description:
+    "Explore the web development projects and skills of Kasim Saifi.",
+};
 
 export default function RootLayout({ children }) {
-  return (<>
-    <html data-theme="valentine" lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-    {/* <Footer/> */}
-  </>
-  )
+  return (
+    <>
+      <ThemeProvider>
+        <Layout>
+          <Suspense
+            fallback={
+              <>
+                <Loading />
+              </>
+            }
+          >
+            {children}
+          </Suspense>
+        </Layout>
+      </ThemeProvider>
+    </>
+  );
 }

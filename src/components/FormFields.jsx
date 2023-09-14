@@ -130,7 +130,7 @@ export const FromButton = () => {
 };
 export const FadeContainer = ({ children }) => {
   return (
-    <Fade cascade damping={0.7}>
+    <Fade >
       <Reveal keyframes={customFromBottomAnimation}>{children}</Reveal>
     </Fade>
   );

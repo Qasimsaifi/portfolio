@@ -1,4 +1,5 @@
 import { insertData, getData } from "@/lib/dbActions";
+
 import {
   FadeContainer,
   FromButton,
@@ -6,6 +7,7 @@ import {
   InputFieldFromRight,
   TextareaField,
 } from "./FormFields";
+import AddressBox from "./AddressBox";
 
 const Contact = async () => {
   async function handleSubmit(formData) {
@@ -48,6 +50,9 @@ const Contact = async () => {
             </div>
           </form>
         </div>
+      </FadeContainer>
+      <FadeContainer>
+        <AddressBox />
       </FadeContainer>
     </div>
   );

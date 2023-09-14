@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { Icon } from "@iconify/react";
-const customAnimation = keyframes`
+const customFromRightAnimation = keyframes`
 from {
     opacity: 0;
     transform: translate3d(30px, -10px, 0);
@@ -18,7 +18,7 @@ from {
   }
 }
 `;
-const customImageAnimation = keyframes`
+const customFromLeftAnimation = keyframes`
 from {
     opacity: 0;
     transform: translate3d(-40px, -10px, 0);
@@ -62,10 +62,23 @@ const Skills = () => {
     {skills.map((skill, index) => (
       <div key={index} className="w-full sm:w-1/2 md:w-1/4 mb-6 sm:mb-8 md:mb-12 px-2">
         <div className="shadow-md p-4 rounded-lg h-full flex flex-col justify-between">
-          <Reveal keyframes={customAnimation}>
+        <Reveal
+            keyframes={
+              index % 2 === 0
+                ? customFromLeftAnimation
+                : customFromRightAnimation
+            }
+          >
             <p className="text-lg font-semibold text-center">{skill.name}</p>
           </Reveal>
-          <Reveal keyframes={customImageAnimation}>
+          <Reveal
+            keyframes={
+              index % 2 === 0
+                ? customFromLeftAnimation
+                : customFromRightAnimation
+            }
+          >
+          {/* <Reveal keyframes={customImageAnimation}> */}
             <div className="flex justify-center my-4">
               <Icon icon={skill.icon} width="150" />
             </div>

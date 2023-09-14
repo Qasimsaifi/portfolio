@@ -35,9 +35,11 @@ from {
 
 const ProjectsPage = async ({ portfolioData }) => {
   return (
-    <div className="container mx-auto max-w-screen-xl mt-12">
+    <div className="container mx-auto max-w-screen-xl mt-12 px-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4">
         {portfolioData?.map((project, index) => (
+          <div  key={index}>
+
           <Reveal
             keyframes={
               index % 2 === 0
@@ -45,8 +47,9 @@ const ProjectsPage = async ({ portfolioData }) => {
                 : customFromRightAnimation
             }
           >
-            <ProjectCard key={index} project={project} />
+            <ProjectCard project={project} />
           </Reveal>
+              </div>
         ))}
       </div>
     </div>

@@ -6,9 +6,7 @@ import React from "react";
 const aboutPage = () => {
   return (
    <>
-   <Navbar/>
    <About/>
-   <Footer/>
    </>
   );
 };

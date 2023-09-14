@@ -35,36 +35,32 @@ const ProjectCard = ({ project }) => {
   return (
     <Fade cascade damping={0.4}>
       {/* <Reveal keyframes={customFromLeftAnimation}> */}
-        <div className="card shadow-xl rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-          <div className="relative">
-            <img
-              className="w-full object-cover object-center"
-              src={project.project_image_path}
-              alt={project.project_name}
-            />
+      <div className="card shadow-xl rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+        <div className="relative">
+          <img
+            className="w-full object-cover object-center"
+            src={project.project_image_path}
+            alt={project.project_name}
+          />
 
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-200">
-              <Fade cascade damping={0.14}>
-                <div className="text-center">
-                  <h2 className="font-bold text-white">
-                    {project.project_name}
-                  </h2>
-                  <p className="text-base text-white">
-                    {project.project_description}
-                  </p>
-                  <a
-                    className="btn btn-sm mt-4"
-                    href={project.project_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Visit
-                  </a>
-                </div>
-              </Fade>
-            </div>
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-200">
+            <Fade cascade damping={0.14}>
+              <div className="text-center">
+                <h2 className="font-bold ">{project.project_name}</h2>
+                <p className="text-base ">{project.project_description}</p>
+                <a
+                  className="btn btn-sm mt-4"
+                  href={project.project_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit
+                </a>
+              </div>
+            </Fade>
           </div>
         </div>
+      </div>
       {/* </Reveal> */}
     </Fade>
   );

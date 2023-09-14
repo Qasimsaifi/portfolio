@@ -5,9 +5,7 @@ import React from "react";
 const contactPage = () => {
   return (
     <>
-    <Navbar/>
     <Contact/>
-    <Footer/>
     </>
   );
 };
