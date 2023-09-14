@@ -13,13 +13,13 @@ export const getData = async () => {
   }
 };
 
-export const insertData = async (name, email) => {
+export const insertData = async (fullName, email, subject, message) => {
   try {
     const client = await pool.connect();
 
     // Define the SQL INSERT query
-    const query = 'INSERT INTO tesing (name, email) VALUES ($1, $2)';
-    const values = [name, email];
+    const query = 'INSERT INTO contact (full_name, email, subject, message) VALUES ($1, $2, $3, $4)';
+    const values = [fullName, email, subject, message];
 
     // Execute the query
     await client.query(query, values);
