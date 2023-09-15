@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer items-center p-4 bg-base-100 border-t border-base-300">
       <aside className="items-center grid-flow-col">
-        <a className="btn btn-sm btn-ghost normal-case text-xl">KASIM</a>
+        <h1 className="btn btn-sm btn-ghost normal-case text-xl">KASIM</h1>
         <p>&copy; 2023 - Kasim Saifi - All Rights Reserved</p>
 
       </aside>
