@@ -4,6 +4,7 @@ import Typewriter from "typewriter-effect";
 import { Fade } from "react-awesome-reveal";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
+import Link from "next/link";
 
 const customAnimation = keyframes`
 from {
@@ -86,7 +87,7 @@ const Hero = () => {
                 your web applications together!
               </p>
 
-              <button className="btn btn-primary">My Work</button>
+             <Link href='/projects'> <button className="btn btn-primary">My Work</button></Link>
             </Reveal>
           </div>
         </div>
