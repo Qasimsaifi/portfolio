@@ -41,8 +41,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="avatar indicator ">
-          <span className="indicator-item badge badge-primary">Beta</span>
-          <a href="/" className="btn btn-ghost normal-case text-xl btn-xs">
+          {/* <span className="indicator-item badge badge-primary">Beta</span> */}
+          <a href="/" className="btn btn-ghost normal-case text-xl">
             KASIM
           </a>
         </div>
