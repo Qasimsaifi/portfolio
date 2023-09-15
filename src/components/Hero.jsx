@@ -60,7 +60,7 @@ const Hero = () => {
                   src="/author.png"
                   alt=""
                   className="mask mask-circle bg-primary"
-                  width={300} // Set the desired width
+                  width={300}
                   height={300}
                 />
               </div>
