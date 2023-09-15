@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer items-center p-4 bg-base-100 border-t border-base-300">
       <aside className="items-center grid-flow-col">
         <h1 className="btn btn-sm btn-ghost normal-case text-xl">KASIM</h1>
-        <p>&copy; 2023 - Kasim Saifi - All Rights Reserved</p>
+        <p>&copy; 2023 - Kasim Saifi - All Rights Reserved - Version 2</p>
 
       </aside>
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
