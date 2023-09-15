@@ -57,10 +57,10 @@ const Hero = () => {
             <div className="avatar">
               <div className="w-[30vw] rounded-full">
                 <Image
-                  src="/author.png"
+                  src="/author.webp"
                   alt=""
-                  width={300}
-                  height={300}
+                  width={600}
+                  height={600}
                   className="mask mask-circle bg-primary"
                 />
               </div>
