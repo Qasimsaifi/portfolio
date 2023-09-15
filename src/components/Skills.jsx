@@ -8,7 +8,7 @@ const customFromRightAnimation = keyframes`
 from {
     opacity: 0;
     transform: translate3d(30px, -10px, 0);
-    transition-timing-function: ease-out; /* Add easing for a smoother animation */
+    transition-timing-function: ease-out;
   }
 
   to {
