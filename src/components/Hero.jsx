@@ -59,9 +59,9 @@ const Hero = () => {
                 <Image
                   src="/author.png"
                   alt=""
-                  className="mask mask-circle bg-primary"
                   width={300}
                   height={300}
+                  className="mask mask-circle bg-primary"
                 />
               </div>
             </div>
