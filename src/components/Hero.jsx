@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";https://github.com/Qasimsaifi/portfolio/pull/7/conflict?name=src%252Fcomponents%252FHero.jsx&ancestor_oid=d4de8c3df0ee998da201eeaa2a09f2b281e2e818&base_oid=31642e11e64cc39f961fe79467d01e05a5b420ba&head_oid=dbc8fd4296ec577bcdc65f1921ef6003eefb7e0e
 import Typewriter from "typewriter-effect";
 import { Fade } from "react-awesome-reveal";
 import { Reveal } from "react-awesome-reveal";
@@ -56,12 +56,12 @@ const Hero = () => {
           <Reveal keyframes={customImageAnimation}>
             <div className="avatar">
               <div className="w-[30vw] rounded-full">
-              <Image
+                <Image
                   src="/author.png"
                   alt=""
-                  className="mask mask-circle bg-primary"
                   width={300}
                   height={300}
+                  className="mask mask-circle bg-primary"
                 />
               </div>
             </div>
