@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="avatar indicator ">
           <span className="indicator-item badge badge-primary">Beta</span>
           <a href="/" className="btn btn-ghost normal-case text-xl btn-xs">
-            QASIM
+            KASIM
           </a>
         </div>
       </div>

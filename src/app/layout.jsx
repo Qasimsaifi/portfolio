@@ -5,7 +5,7 @@ import Layout from "@/components/Layout";
 import { Suspense } from "react";
 import Loading from "@/components/Loading";
 export const metadata = {
-  title: "Qasim Saifi - Full Stack Web Developer Portfolio",
+  title: "Kasim Saifi - Full Stack Web Developer Portfolio",
   description:
     "Explore the web development projects and skills of Kasim Saifi.",
 };

@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <footer className="footer items-center p-4 bg-base-100 border-t border-base-300">
       <aside className="items-center grid-flow-col">
-        <a className="btn btn-sm btn-ghost normal-case text-xl">QASIM</a>
-        <p>&copy; 2023 - Qasim Saifi - All Rights Reserved</p>
+        <a className="btn btn-sm btn-ghost normal-case text-xl">KASIM</a>
+        <p>&copy; 2023 - Kasim Saifi - All Rights Reserved</p>
 
       </aside>
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">

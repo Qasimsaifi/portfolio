@@ -65,7 +65,7 @@ const Hero = () => {
           </Reveal>
           <div>
             <Reveal keyframes={customAnimation}>
-              <h1 className="text-5xl font-bold mb-6">Hi, I'm Qasim Saifi</h1>
+              <h1 className="text-5xl font-bold mb-6">Hi, I'm Kasim Saifi</h1>
 
               <h1 className="text-5xl font-bold">
                 <Typewriter

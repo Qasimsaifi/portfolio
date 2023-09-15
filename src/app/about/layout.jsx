@@ -4,7 +4,7 @@ import Loading from "@/components/Loading";
 import Navbar from "@/components/Navbar";
 
 export const metadata = {
-  title: "Qasim Saifi - Full Stack Web Developer Portfolio",
+  title: "Kasim Saifi - Full Stack Web Developer Portfolio",
   description:
     "Explore the web development projects and skills of Kasim Saifi.",
 };

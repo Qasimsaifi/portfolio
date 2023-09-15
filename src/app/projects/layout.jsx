@@ -4,9 +4,9 @@ import Loading from "@/components/Loading";
 import Navbar from "@/components/Navbar";
 
 export const metadata = {
-  title: "Qasim Saifi - Full Stack Web Developer Portfolio",
+  title: "Web Development Projects by Kasim Saifi",
   description:
-    "Explore the web development projects and skills of Kasim Saifi.",
+    "Explore the impressive portfolio of Kasim Saifi, showcasing a collection of innovative web development projects. See how he combines design and functionality to create outstanding websites",
 };
 
 export default function ProjectLayout({ children }) {
