@@ -30,7 +30,7 @@ export default function ThemeChanger() {
   };
 
   return (
-    <button onClick={toggleTheme} className="btn">
+    <button onClick={toggleTheme} className="btn" aria-label="Change Theme">
       {themeIcons[theme]}
     </button>
   );
