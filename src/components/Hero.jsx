@@ -4,6 +4,7 @@ import Typewriter from "typewriter-effect";
 import { Fade } from "react-awesome-reveal";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
+import Image from "next/image";
 
 const customAnimation = keyframes`
 from {
@@ -55,7 +56,7 @@ const Hero = () => {
           <Reveal keyframes={customImageAnimation}>
             <div className="avatar">
               <div className="w-[30vw] rounded-full">
-                <img
+              <Image
                   src="/author.png"
                   alt=""
                   className="mask mask-circle bg-primary"
