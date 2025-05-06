@@ -152,7 +152,7 @@ export function DockBar() {
                           buttonVariants({ variant: "ghost", size: "icon" }),
                           `${
                             isMobile ? "size-12" : "size-14"
-                          } rounded-md transition-all duration-300 ease-in-out hover:scale-110 bg-transparent text-white`
+                          } rounded-md transition-all duration-300 ease-in-out hover:scale-160 bg-transparent text-white`
                         )}
                       >
                         <item.icon
@@ -183,7 +183,7 @@ export function DockBar() {
                           aria-label={social.name}
                           className={cn(
                             buttonVariants({ variant: "ghost", size: "icon" }),
-                            "size-14 rounded-md transition-all duration-300 ease-in-out hover:scale-110 text-white"
+                            "size-14 rounded-md transition-all duration-300 ease-in-out hover:scale-160 text-white"
                           )}
                         >
                           <social.icon className="size-6" />
@@ -213,7 +213,7 @@ export function DockBar() {
                       buttonVariants({ variant: "ghost", size: "icon" }),
                       `${
                         isMobile ? "size-12" : "size-14"
-                      } rounded-md transition-all duration-300 ease-in-out text-white`
+                      } rounded-md transition-all duration-300 ease-in-out bg-transparent text-white`
                     )}
                   >
                     <MenuDialog />
