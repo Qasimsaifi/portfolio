@@ -147,7 +147,7 @@ export default function MenuDialog() {
         <DialogTrigger asChild>
           <Button
             variant="outline"
-            className="bg-none border-none hover:bg-transparent"
+            className="bg-transparent border-none hover:bg-transparent "
           >
             <Grip className={`${isMobile ? "size-5" : "size-6"}`} />
           </Button>
